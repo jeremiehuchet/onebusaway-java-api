@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <name>OneBusAway Java API client</name>
     <description>A simple client library for the OneBusAway API written in Java</description>
     <url>http://kops.github.com/onebusaway-java-api</url>
-    
+
     <licenses>
         <license>
             <name>GNU General Public License, Version 3</name>
@@ -36,7 +36,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <distribution>repo</distribution>
         </license>
     </licenses>
-    
+
     <scm>
         <url>https://github.com/kops/onebusaway-java-api/tree/master</url>
         <connection>scm:git:git@github.com:kops/onebusaway-java-api.git</connection>
@@ -87,6 +87,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <includes>
+                    <include>onebusaway-client-test.properties</include>
+                </includes>
+                <filtering>true</filtering>
+            </testResource>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <excludes>
+                    <exclude>onebusaway-client-test.properties</exclude>
+                </excludes>
+                <filtering>false</filtering>
+            </testResource>
+        </testResources>
+    </build>
 
     <profiles>
         <profile>

@@ -9,3 +9,38 @@ This library is fully compatible with Android. The @pom.xml@ file has two profil
 * **android** can be activated using command @mvn -Pandroid clean package@. Then the dependencies will be switched to android dependency (@com.google.android:android-2.1.2@)
 
 Please ask for enhancements and report bugs on "Github tracker":https://github.com/kops/nominatim-java-api/issues/new or "contact us":http://www.google.com/recaptcha/mailhide/d?k=01Th60_7w3rxWuSJumsnqxfg==&c=REgbsYXndhO58POROxZGybu0F_Xu3JmR-wBRNbh8knE.
+
+h2. Unit testing
+
+To run unit tests, the _URL_ and the _key_ of the test server must be provided. There is two ways to do this:
+ 
+h3. from the command line
+
+Run a command like @mvn test -Donebusaway.api.testUrl=http://server.net/onebusaway-api-webapp/api -Donebusaway.api.testKey=key@.
+
+
+h3. define a profile
+
+Add the following in your _settings.xml_ file:
+
+@
+    <profiles>
+        <profile>
+            <id>one-busaway-tests</id>
+            <properties>
+                <onebusaway.api.testUrl>http://api.itinerennes.fr/onebusaway-api-webapp/api</onebusaway.api.testUrl>
+                <onebusaway.api.testKey>web</onebusaway.api.testKey>
+            </properties>
+        </profile>
+    </profiles>
+@
+
+Then you have to activate this profile:
+
+@
+    <activeProfiles>
+        <activeProfile>one-busaway-tests</activeProfile>
+    </activeProfiles>
+@
+
+Or run @mvn test -Pone-busaway-tests@
