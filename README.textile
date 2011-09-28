@@ -14,16 +14,13 @@ h2. Unit testing
 
 To run unit tests, the _URL_ and the _key_ of the test server must be provided. There is two ways to do this:
  
-h3. from the command line
-
+* from the command line
 Run a command like @mvn test -Donebusaway.api.testUrl=http://server.net/onebusaway-api-webapp/api -Donebusaway.api.testKey=key@.
 
-
-h3. define a profile
-
+* define a profile
 Add the following in your _settings.xml_ file:
 
-@
+pre.
     <profiles>
         <profile>
             <id>one-busaway-tests</id>
@@ -33,14 +30,12 @@ Add the following in your _settings.xml_ file:
             </properties>
         </profile>
     </profiles>
-@
 
 Then you have to activate this profile:
 
-@
+pre.
     <activeProfiles>
         <activeProfile>one-busaway-tests</activeProfile>
     </activeProfiles>
-@
 
 Or run @mvn test -Pone-busaway-tests@
