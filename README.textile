@@ -14,11 +14,11 @@ h2. Unit testing
 
 To run unit tests, the _URL_ and the _key_ of the test server must be provided. There is two ways to do this:
  
-* from the command line
+h5. from the command line
 
 Run a command like @mvn test -Donebusaway.api.testUrl=http://server.net/onebusaway-api-webapp/api -Donebusaway.api.testKey=key@.
 
-* define a profile
+h5. or define a profile
 
 Add the following in your _settings.xml_ file:
 
