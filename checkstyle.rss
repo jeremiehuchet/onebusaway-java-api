@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>OneBusAway Java API client - Checkstyle report</title>
+    <link>http://kops.github.com/onebusaway-java-api</link>
+    <description>OneBusAway Java API client - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2011</copyright>
+    <item>
+      <title>File: 17,
+             Errors: 0,
+             Warnings: 93,
+             Infos: 0
+      </title>
+            <link>http://kops.github.com/onebusaway-java-api/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.model.Stop.java">fr/dudie/onebusaway/model/Stop.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.model.TripSchedule.java">fr/dudie/onebusaway/model/TripSchedule.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.model.ArrivalAndDeparture.java">fr/dudie/onebusaway/model/ArrivalAndDeparture.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.exceptions.OneBusAwayException.java">fr/dudie/onebusaway/exceptions/OneBusAwayException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.client.TripDetailsHttpResponseHandler.java">fr/dudie/onebusaway/client/TripDetailsHttpResponseHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.client.ArrivalsAndDeparturesForStopHttpResponseHandler.java">fr/dudie/onebusaway/client/ArrivalsAndDeparturesForStopHttpResponseHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.client.IOneBusAwayClient.java">fr/dudie/onebusaway/client/IOneBusAwayClient.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.client.StopHttpResponseHandler.java">fr/dudie/onebusaway/client/StopHttpResponseHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.model.TripStopTime.java">fr/dudie/onebusaway/model/TripStopTime.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.client.ScheduleForStopHttpResponseHandler.java">fr/dudie/onebusaway/client/ScheduleForStopHttpResponseHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.model.StopSchedule.java">fr/dudie/onebusaway/model/StopSchedule.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.model.Route.java">fr/dudie/onebusaway/model/Route.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.client.OneBusAwayConstants.java">fr/dudie/onebusaway/client/OneBusAwayConstants.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.client.OneBusAwayUtils.java">fr/dudie/onebusaway/client/OneBusAwayUtils.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.model.BusStation.java">fr/dudie/onebusaway/model/BusStation.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.client.JsonOneBusAwayClient.java">fr/dudie/onebusaway/client/JsonOneBusAwayClient.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://kops.github.com/onebusaway-java-api/checkstyle.html#fr.dudie.onebusaway.model.ScheduleStopTime.java">fr/dudie/onebusaway/model/ScheduleStopTime.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
