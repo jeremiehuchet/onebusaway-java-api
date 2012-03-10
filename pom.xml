@@ -12,7 +12,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses />.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>fr.dudie</groupId>
         <artifactId>dudie-parent</artifactId>
@@ -21,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses />.
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>onebusaway-api</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>2.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>OneBusAway Java API client</name>
@@ -48,8 +49,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses />.
     </issueManagement>
 
     <properties>
+        <sources.generated.onebusaway>${project.build.directory}/generated-sources/onebusaway</sources.generated.onebusaway>
+        
         <!-- compile time deps versions -->
         <slf4j.version>1.6.1</slf4j.version>
+        <version.onebusaway>1.0.3</version.onebusaway>
 
         <!-- test deps versions -->
         <junit.version>4.8.2</junit.version>
@@ -85,6 +89,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses />.
             <type>jar</type>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <!-- this is only required at compile time -->
+            <groupId>org.onebusaway</groupId>
+            <artifactId>onebusaway-csv-entities</artifactId>
+            <version>${version.onebusaway}</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -104,6 +116,83 @@ along with this program.  If not, see <http://www.gnu.org/licenses />.
                 <filtering>false</filtering>
             </testResource>
         </testResources>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${sources.generated.onebusaway}</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <artifactItems>
+                        <artifactItem>
+                            <groupId>org.onebusaway</groupId>
+                            <artifactId>onebusaway-api-core</artifactId>
+                            <version>${version.onebusaway}</version>
+                            <type>jar</type>
+                            <classifier>sources</classifier>
+                            <outputDirectory>${sources.generated.onebusaway}</outputDirectory>
+                            <includes>
+                                org/onebusaway/api/model/**/*.java,
+                                org/onebusaway/api/impl/MaxCountSupport.java
+                            </includes>
+                        </artifactItem>
+                        <artifactItem>
+                            <groupId>org.onebusaway</groupId>
+                            <artifactId>onebusaway-geospatial</artifactId>
+                            <version>${version.onebusaway}</version>
+                            <type>jar</type>
+                            <classifier>sources</classifier>
+                            <outputDirectory>${sources.generated.onebusaway}</outputDirectory>
+                            <includes>org/onebusaway/geospatial/model/*</includes>
+                        </artifactItem>
+                        <artifactItem>
+                            <groupId>org.onebusaway</groupId>
+                            <artifactId>onebusaway-transit-data</artifactId>
+                            <version>${version.onebusaway}</version>
+                            <type>jar</type>
+                            <classifier>sources</classifier>
+                            <outputDirectory>${sources.generated.onebusaway}</outputDirectory>
+                            <includes>org/onebusaway/transit_data/model/**/*.java</includes>
+                        </artifactItem>
+                        <artifactItem>
+                            <groupId>org.onebusaway</groupId>
+                            <artifactId>onebusaway-collections</artifactId>
+                            <version>${version.onebusaway}</version>
+                            <type>jar</type>
+                            <classifier>sources</classifier>
+                            <outputDirectory>${sources.generated.onebusaway}</outputDirectory>
+                            <includes>org/onebusaway/collections/CollectionsLibrary.java</includes>
+                        </artifactItem>
+                    </artifactItems>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>extract-onebusaway-api-model</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 
     <profiles>
