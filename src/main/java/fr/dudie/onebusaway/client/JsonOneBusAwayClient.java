@@ -58,10 +58,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
     private final HttpClient httpClient;
 
     /** The OneBusAway API url to use. */
-    private final String oneBusAwayApiUrl;
-
-    /** The OneBusAway API key to use. */
-    private final String oneBusAwayApiKey;
+    private final String baseUrl;
 
     /**
      * Creates a OneBusAway API client.
@@ -76,8 +73,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
     public JsonOneBusAwayClient(final HttpClient httpClient, final String url, final String key) {
 
         this.httpClient = httpClient;
-        this.oneBusAwayApiUrl = String.format("%s%s", url, OneBusAwayConstants.OBA_API_PATH);
-        this.oneBusAwayApiKey = key;
+        this.baseUrl = String.format("%s%s?key=%s", url, OneBusAwayConstants.OBA_API_PATH, key);
     }
 
     /**
@@ -92,18 +88,15 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
     private HttpGet createOBARequest(final String path, final List<BasicNameValuePair> parameters) {
 
         parameters.add(new BasicNameValuePair(OneBusAwayConstants.OBA_API_VERSION, API_VERSION));
-        parameters.add(new BasicNameValuePair(OneBusAwayConstants.OBA_API_KEY, oneBusAwayApiKey));
 
         final StringBuilder params = new StringBuilder();
-        params.append("?");
         for (final BasicNameValuePair param : parameters) {
-            if (params.length() > 1) {
-                params.append("&");
-            }
+            params.append("&");
             params.append(param.getName());
             params.append("=").append(param.getValue());
         }
 
+        LOGGER.info(path.concat(params.toString()));
         final HttpGet req = new HttpGet(path.concat(params.toString()));
         req.addHeader(H_ACCEPT, "text/json");
         req.addHeader(H_ACCEPT, "application/json");
@@ -126,7 +119,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("stopsForRoute.start - routeId={}", routeId);
         }
-        final String urlCall = String.format(oneBusAwayApiUrl, "stops-for-route", routeId);
+        final String urlCall = String.format(baseUrl, "stops-for-route", routeId);
 
         final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(2);
         params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "false"));
@@ -155,7 +148,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getTripDetails.start - tripId={}", tripId);
         }
-        final String urlCall = String.format(oneBusAwayApiUrl, "trip-details", tripId);
+        final String urlCall = String.format(baseUrl, "trip-details", tripId);
 
         final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(2);
         params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "true"));
@@ -181,8 +174,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getArrivalsAndDeparturesForStop.start - stopId={}", stopId);
         }
-        final String urlCall = String.format(oneBusAwayApiUrl, "arrivals-and-departures-for-stop",
-                stopId);
+        final String urlCall = String.format(baseUrl, "arrivals-and-departures-for-stop", stopId);
 
         final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(2);
         params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "false"));
@@ -210,7 +202,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getScheduleForStop.start - stopId={}", stopId);
         }
-        final String urlCall = String.format(oneBusAwayApiUrl, "schedule-for-stop", stopId);
+        final String urlCall = String.format(baseUrl, "schedule-for-stop", stopId);
 
         final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(2);
         params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "true"));
@@ -237,7 +229,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getStop.start - stopId={}", stopId);
         }
-        final String urlCall = String.format(oneBusAwayApiUrl, "stop", stopId);
+        final String urlCall = String.format(baseUrl, "stop", stopId);
 
         final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(1);
         params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "true"));

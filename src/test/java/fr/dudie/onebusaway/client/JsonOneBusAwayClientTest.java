@@ -24,6 +24,7 @@ import java.util.Properties;
 
 import junit.framework.TestCase;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.http.client.HttpClient;
 import org.apache.http.conn.ClientConnectionManager;
 import org.apache.http.conn.scheme.PlainSocketFactory;
@@ -100,12 +101,12 @@ public class JsonOneBusAwayClientTest extends TestCase {
         LOGGER.info("testGetTripDetails.start");
 
         TripSchedule schedule = null;
-        schedule = obaClient.getTripDetails("1_10000");
+        schedule = obaClient.getTripDetails("2_10000");
 
         assertNotNull("no schedule returned by the api", schedule);
-        assertEquals("24 stop times should be returned by the api", 24, schedule.getStopTimes()
+        assertEquals("27 stop times should be returned by the api", 27, schedule.getStopTimes()
                 .size());
-        assertEquals("the first stop of this trip should be Chêne Vert", "Chêne Vert", schedule
+        assertEquals("the first stop of this trip should be Saint Saëns", "Saint Saëns", schedule
                 .getStopTimes().get(0).getStop().getName());
 
         LOGGER.info("testGetTripDetails.end");
@@ -122,9 +123,20 @@ public class JsonOneBusAwayClientTest extends TestCase {
         LOGGER.info("testGetArrivalsAndDeparturesForStop.start");
 
         List<ArrivalAndDeparture> arrivalsAndDepartures = null;
-        arrivalsAndDepartures = obaClient.getArrivalsAndDeparturesForStop("1_gdquart");
+        arrivalsAndDepartures = obaClient.getArrivalsAndDeparturesForStop("2_1212");
 
         assertNotNull("no arrivals and departures returned by the api", arrivalsAndDepartures);
+        for (final ArrivalAndDeparture aad : arrivalsAndDepartures) {
+            assertTrue(StringUtils.isNotBlank(aad.getRouteId()));
+            assertNotNull(aad.getDistanceFromStop());
+            assertTrue(StringUtils.isNotBlank(aad.getRouteLongName()));
+            assertTrue(StringUtils.isNotBlank(aad.getRouteShortName()));
+            assertNotNull(aad.getScheduledArrivalTime());
+            assertNotNull(aad.getServiceDate());
+            assertTrue(StringUtils.isNotBlank(aad.getStopId()));
+            assertTrue(StringUtils.isNotBlank(aad.getTripHeadsign()));
+            assertNotNull(aad.getStopSequence());
+        }
 
         LOGGER.info("testGetArrivalsAndDeparturesForStop.end");
     }
@@ -140,10 +152,10 @@ public class JsonOneBusAwayClientTest extends TestCase {
         LOGGER.info("testGetStop.start");
 
         Stop stop = null;
-        stop = obaClient.getStop("1_repbottb");
+        stop = obaClient.getStop("2_1167");
 
         assertNotNull("no stop returned by the api", stop);
-        assertEquals("3 routes should be returned for the stop repbottb", 3, stop.getRoutes()
+        assertEquals("5 routes should be returned for the stop repbottb", 5, stop.getRoutes()
                 .size());
         assertEquals("the name of the stop repbottb should be République Pré Botté",
                 "République Pré Botté", stop.getName());
@@ -167,26 +179,26 @@ public class JsonOneBusAwayClientTest extends TestCase {
         StopSchedule schedule = null;
         final Calendar calendar = Calendar.getInstance();
         final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        calendar.setTime(sdf.parse("2011-07-27"));
-        schedule = obaClient.getScheduleForStop("1_repbottb", calendar.getTime());
+        calendar.setTime(sdf.parse("2012-03-10"));
+        schedule = obaClient.getScheduleForStop("2_1167", calendar.getTime());
 
         assertNotNull("no schedule returned by the api", schedule);
 
-        assertEquals("109 stop times should be returned by the api", 109, schedule.getStopTimes()
+        assertEquals("79 stop times should be returned by the api", 79, schedule.getStopTimes()
                 .size());
-        assertEquals("the stop id should be 1_repbottb", "1_repbottb", schedule.getStop().getId());
+        assertEquals("the stop id should be 2_1167", "2_1167", schedule.getStop().getId());
         assertEquals("the stop name should be République Pré Botté", "République Pré Botté",
                 schedule.getStop().getName());
-        assertEquals("3 lines should be return for this stop", 3, schedule.getStop().getRoutes()
+        assertEquals("5 lines should be return for this stop", 5, schedule.getStop().getRoutes()
                 .size());
 
         int cpt = 0;
         for (final ScheduleStopTime stopTime : schedule.getStopTimes()) {
-            if (stopTime.getRoute().getShortName().equals("50")) {
+            if (stopTime.getRoute().getShortName().equals("53")) {
                 cpt++;
             }
         }
-        assertEquals("54 stop times should be returned by the api for line 50", 54, cpt);
+        assertEquals("31 stop times should be returned by the api for line 53", 31, cpt);
 
         LOGGER.info("testGetScheduleForStop.end");
     }
