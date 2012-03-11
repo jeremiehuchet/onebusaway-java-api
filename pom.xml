@@ -54,6 +54,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses />.
         <!-- test deps versions -->
         <junit.version>4.8.2</junit.version>
         <commons-lang.version>2.6</commons-lang.version>
+        <commons-collections.version>3.2.1</commons-collections.version>
     </properties>
 
     <dependencies>
@@ -75,14 +76,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses />.
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>${commons-lang.version}</version>
-            <type>jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${commons-collections.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
-            <type>jar</type>
             <scope>test</scope>
         </dependency>
     </dependencies>

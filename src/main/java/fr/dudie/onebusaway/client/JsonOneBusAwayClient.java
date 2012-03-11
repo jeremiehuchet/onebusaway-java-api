@@ -210,6 +210,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
 
         final StopSchedule schedule = httpClient.execute(createOBARequest(urlCall, params),
                 new ScheduleForStopHttpResponseHandler());
+        schedule.setDate(date);
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getScheduleForStop.end");
