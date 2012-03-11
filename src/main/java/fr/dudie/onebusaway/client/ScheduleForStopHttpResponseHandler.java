@@ -15,23 +15,35 @@
 package fr.dudie.onebusaway.client;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.lang.reflect.Type;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ResponseHandler;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import org.onebusaway.api.model.transit.EntryWithReferencesBean;
+import org.onebusaway.api.model.transit.RouteV2Bean;
+import org.onebusaway.api.model.transit.ScheduleStopTimeInstanceV2Bean;
+import org.onebusaway.api.model.transit.StopRouteDirectionScheduleV2Bean;
+import org.onebusaway.api.model.transit.StopRouteScheduleV2Bean;
+import org.onebusaway.api.model.transit.StopScheduleV2Bean;
+import org.onebusaway.api.model.transit.StopV2Bean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import fr.dudie.onebusaway.exceptions.OneBusAwayException;
 import fr.dudie.onebusaway.model.Route;
 import fr.dudie.onebusaway.model.ScheduleStopTime;
 import fr.dudie.onebusaway.model.Stop;
 import fr.dudie.onebusaway.model.StopSchedule;
+import fr.dudie.onebusaway.model.v2.OneBusAwayResponse;
 
 /**
  * Handles responses for a call to the "schedule-for-stop" method of the OneBusAway API.
@@ -43,6 +55,20 @@ public final class ScheduleForStopHttpResponseHandler implements ResponseHandler
     /** The event logger. */
     private static final Logger LOGGER = LoggerFactory
             .getLogger(ScheduleForStopHttpResponseHandler.class);
+
+    /** The gson instance. */
+    private final Gson gsonInstance;
+
+    /**
+     * Constructor.
+     * 
+     * @param gsonInstance
+     *            the gson instance
+     */
+    public ScheduleForStopHttpResponseHandler(final Gson gsonInstance) {
+
+        this.gsonInstance = gsonInstance;
+    }
 
     /**
      * {@inheritDoc}
@@ -56,64 +82,74 @@ public final class ScheduleForStopHttpResponseHandler implements ResponseHandler
             LOGGER.debug("handleResponse.start");
         }
 
-        StopSchedule stopSchedule = null;
-        String content = null;
-        JSONObject data;
+        final Map<String, Stop> stopsById = new HashMap<String, Stop>();
+        final Map<String, Route> routesById = new HashMap<String, Route>();
+
+        final InputStream content = response.getEntity().getContent();
+        final Type type = new TypeToken<OneBusAwayResponse<StopScheduleV2Bean>>() {
+        }.getType();
+
+        final StopSchedule stopSchedule = new StopSchedule();
 
         try {
-            content = EntityUtils.toString(response.getEntity(), "utf-8");
-            data = OneBusAwayUtils.getServiceResponse(content);
+            final OneBusAwayResponse<StopScheduleV2Bean> obaResponse = gsonInstance.fromJson(
+                    new InputStreamReader(content, "utf-8"), type);
 
-            if (data != null) {
-                stopSchedule = new StopSchedule();
+            assertResponseOk(obaResponse);
 
-                final JSONObject references = data.getJSONObject("references");
-                final JSONObject jsonEntry = data.getJSONObject("entry");
+            final EntryWithReferencesBean<StopScheduleV2Bean> data = obaResponse.getData();
 
-                final HashMap<String, Route> routes = OneBusAwayUtils
-                        .getReferencedRoutes(references.getJSONArray("routes"));
+            // index references
+            for (final RouteV2Bean obaRoute : data.getReferences().getRoutes()) {
+                final Route route = new Route();
+                route.setId(obaRoute.getId());
+                route.setAgencyId(obaRoute.getAgencyId());
+                route.setColor(obaRoute.getColor());
+                route.setDescription(obaRoute.getDescription());
+                route.setLongName(obaRoute.getLongName());
+                route.setShortName(obaRoute.getShortName());
+                route.setTextColor(obaRoute.getColor());
+                route.setType(obaRoute.getType());
+                routesById.put(route.getId(), route);
+            }
+            for (final StopV2Bean obaStop : data.getReferences().getStops()) {
+                final Stop stop = new Stop();
+                stop.setId(obaStop.getId());
+                stop.setCode(Integer.valueOf(obaStop.getCode()));
+                stop.setDirection(obaStop.getDirection());
+                stop.setLat(obaStop.getLat());
+                stop.setLon(obaStop.getLon());
+                stop.setName(obaStop.getName());
+                for (final String routeId : obaStop.getRouteIds()) {
+                    stop.getRoutes().add(routesById.get(routeId));
+                }
+                stopsById.put(stop.getId(), stop);
+            }
 
-                final HashMap<String, Stop> stops = OneBusAwayUtils.getReferencedStops(
-                        references.getJSONArray("stops"), routes);
-                stopSchedule.setStop(stops.get(jsonEntry.optString("stopId")));
+            final StopScheduleV2Bean obaStopSchedule = data.getEntry();
 
-                final JSONArray jsonStopRouteSchedules = jsonEntry
-                        .getJSONArray("stopRouteSchedules");
+            stopSchedule.setStop(stopsById.get(obaStopSchedule.getStopId()));
+            stopSchedule.setDate(new Date(obaStopSchedule.getDate()));
 
-                for (int i = 0; !jsonStopRouteSchedules.isNull(i); i++) {
-                    final JSONObject jsonStopRouteSchedule = jsonStopRouteSchedules
-                            .optJSONObject(i);
-                    final Route route = routes.get(jsonStopRouteSchedule.optString("routeId"));
+            for (final StopRouteScheduleV2Bean srs : obaStopSchedule.getStopRouteSchedules()) {
+                for (final StopRouteDirectionScheduleV2Bean srds : srs
+                        .getStopRouteDirectionSchedules()) {
+                    for (final ScheduleStopTimeInstanceV2Bean ssti : srds.getScheduleStopTimes()) {
+                        final ScheduleStopTime sst = new ScheduleStopTime();
+                        sst.setArrivalTime(new Date(ssti.getArrivalTime()));
+                        sst.setDepartureTime(new Date(ssti.getDepartureTime()));
+                        sst.setHeadsign(srds.getTripHeadsign());
+                        sst.setServiceId(ssti.getServiceId());
+                        sst.setTripId(ssti.getTripId());
+                        sst.setRoute(routesById.get(srs.getRouteId()));
 
-                    final JSONArray jsonStopRouteDirectionSchedules = jsonStopRouteSchedule
-                            .getJSONArray("stopRouteDirectionSchedules");
-
-                    for (int j = 0; !jsonStopRouteDirectionSchedules.isNull(j); j++) {
-                        final JSONObject jsonStopRouteDirectionSchedule = jsonStopRouteDirectionSchedules
-                                .optJSONObject(j);
-                        final String headSign = jsonStopRouteDirectionSchedule
-                                .optString("tripHeadsign");
-
-                        final JSONArray jsonScheduleStopTimes = jsonStopRouteDirectionSchedule
-                                .getJSONArray("scheduleStopTimes");
-
-                        for (int k = 0; !jsonScheduleStopTimes.isNull(k); k++) {
-                            stopSchedule
-                                    .getStopTimes()
-                                    .add(convertJsonObjectToScheduleStopTime(
-                                            jsonScheduleStopTimes.optJSONObject(k), route, headSign));
-                        }
-
+                        stopSchedule.getStopTimes().add(sst);
                     }
                 }
-
-                Collections.sort(stopSchedule.getStopTimes());
-
             }
-        } catch (final JSONException e) {
-            LOGGER.error("error while parsing the response from OneBusAway api", e);
-            throw new IOException("error while parsing the response from OneBusAway api\n"
-                    + content);
+
+            Collections.sort(stopSchedule.getStopTimes());
+
         } catch (final OneBusAwayException e) {
             LOGGER.error("OneBusAway api returned an error", e);
             throw new IOException(e.getMessage());
@@ -125,29 +161,14 @@ public final class ScheduleForStopHttpResponseHandler implements ResponseHandler
         return stopSchedule;
     }
 
-    /**
-     * Converts a JSON object to a ScheduleStopTime object.
-     * 
-     * @param jsonScheduleStopTime
-     * @param route
-     * @param headSign
-     * @return
-     */
-    private ScheduleStopTime convertJsonObjectToScheduleStopTime(
-            final JSONObject jsonScheduleStopTime, final Route route, final String headSign) {
+    private void assertResponseOk(final OneBusAwayResponse<StopScheduleV2Bean> obaResponse)
+            throws OneBusAwayException {
 
-        final ScheduleStopTime scheduleStopTime = new ScheduleStopTime();
-
-        scheduleStopTime.setArrivalTime(OneBusAwayUtils.dateFromTimestamp(jsonScheduleStopTime
-                .optLong("arrivalTime")));
-        scheduleStopTime.setDepartureTime(OneBusAwayUtils.dateFromTimestamp(jsonScheduleStopTime
-                .optLong("departureTime")));
-        scheduleStopTime.setTripId(jsonScheduleStopTime.optString("tripId"));
-        scheduleStopTime.setHeadsign(headSign);
-        scheduleStopTime.setRoute(route);
-        scheduleStopTime.setServiceId(jsonScheduleStopTime.optString("serviceId"));
-
-        return scheduleStopTime;
+        if (2 != obaResponse.getVersion() || 200 != obaResponse.getCode()
+                || !"OK".equalsIgnoreCase(obaResponse.getText())) {
+            obaResponse.setData(null);
+            throw new OneBusAwayException("invalid response: " + gsonInstance.toJson(obaResponse),
+                    null);
+        }
     }
-
 }

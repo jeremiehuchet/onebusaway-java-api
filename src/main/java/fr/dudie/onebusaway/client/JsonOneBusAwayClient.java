@@ -26,6 +26,9 @@ import org.apache.http.message.BasicNameValuePair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import fr.dudie.onebusaway.model.ArrivalAndDeparture;
 import fr.dudie.onebusaway.model.BusStation;
 import fr.dudie.onebusaway.model.Stop;
@@ -60,6 +63,9 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
     /** The OneBusAway API url to use. */
     private final String baseUrl;
 
+    /** The Gson instance. */
+    private final Gson gsonInstance;
+
     /**
      * Creates a OneBusAway API client.
      * 
@@ -74,6 +80,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
 
         this.httpClient = httpClient;
         this.baseUrl = String.format("%s%s?key=%s", url, OneBusAwayConstants.OBA_API_PATH, key);
+        this.gsonInstance = new GsonBuilder().create();
     }
 
     /**
@@ -209,7 +216,7 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
         params.add(new BasicNameValuePair("date", obaSimpleDateFormat.format(date)));
 
         final StopSchedule schedule = httpClient.execute(createOBARequest(urlCall, params),
-                new ScheduleForStopHttpResponseHandler());
+                new ScheduleForStopHttpResponseHandler(gsonInstance));
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getScheduleForStop.end");
