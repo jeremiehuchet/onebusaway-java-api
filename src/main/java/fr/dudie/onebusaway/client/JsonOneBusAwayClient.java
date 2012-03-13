@@ -29,11 +29,13 @@ import org.slf4j.LoggerFactory;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import fr.dudie.onebusaway.gson.ReferencesDeserializer;
 import fr.dudie.onebusaway.model.ArrivalAndDeparture;
 import fr.dudie.onebusaway.model.BusStation;
 import fr.dudie.onebusaway.model.Stop;
 import fr.dudie.onebusaway.model.StopSchedule;
 import fr.dudie.onebusaway.model.TripSchedule;
+import fr.dudie.onebusaway.model.v2.References;
 
 /**
  * Manage calls to the OneBusAway API.
@@ -80,7 +82,9 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
 
         this.httpClient = httpClient;
         this.baseUrl = String.format("%s%s?key=%s", url, OneBusAwayConstants.OBA_API_PATH, key);
-        this.gsonInstance = new GsonBuilder().create();
+        final GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.registerTypeAdapter(References.class, new ReferencesDeserializer());
+        this.gsonInstance = gsonBuilder.create();
     }
 
     /**

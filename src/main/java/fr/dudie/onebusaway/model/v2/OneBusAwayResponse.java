@@ -1,6 +1,5 @@
 package fr.dudie.onebusaway.model.v2;
 
-import org.onebusaway.api.model.transit.EntryWithReferencesBean;
 
 public class OneBusAwayResponse<T> {
 
@@ -10,7 +9,7 @@ public class OneBusAwayResponse<T> {
 
     private String text;
 
-    private EntryWithReferencesBean<T> data;
+    private EntryWithReferences<T> data;
 
     /**
      * Gets the version.
@@ -80,7 +79,7 @@ public class OneBusAwayResponse<T> {
      * 
      * @return the data
      */
-    public final EntryWithReferencesBean<T> getData() {
+    public final EntryWithReferences<T> getData() {
 
         return data;
     }
@@ -91,7 +90,7 @@ public class OneBusAwayResponse<T> {
      * @param data
      *            the data to set
      */
-    public final void setData(final EntryWithReferencesBean<T> data) {
+    public final void setData(final EntryWithReferences<T> data) {
 
         this.data = data;
     }

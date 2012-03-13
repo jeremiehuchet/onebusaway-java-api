@@ -25,7 +25,6 @@ import java.util.Map;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ResponseHandler;
-import org.onebusaway.api.model.transit.EntryWithReferencesBean;
 import org.onebusaway.api.model.transit.RouteV2Bean;
 import org.onebusaway.api.model.transit.ScheduleStopTimeInstanceV2Bean;
 import org.onebusaway.api.model.transit.StopRouteDirectionScheduleV2Bean;
@@ -43,7 +42,9 @@ import fr.dudie.onebusaway.model.Route;
 import fr.dudie.onebusaway.model.ScheduleStopTime;
 import fr.dudie.onebusaway.model.Stop;
 import fr.dudie.onebusaway.model.StopSchedule;
+import fr.dudie.onebusaway.model.v2.EntryWithReferences;
 import fr.dudie.onebusaway.model.v2.OneBusAwayResponse;
+import fr.dudie.onebusaway.model.v2.References;
 
 /**
  * Handles responses for a call to the "schedule-for-stop" method of the OneBusAway API.
@@ -97,10 +98,10 @@ public final class ScheduleForStopHttpResponseHandler implements ResponseHandler
 
             assertResponseOk(obaResponse);
 
-            final EntryWithReferencesBean<StopScheduleV2Bean> data = obaResponse.getData();
+            final EntryWithReferences<StopScheduleV2Bean> data = obaResponse.getData();
 
             // index references
-            for (final RouteV2Bean obaRoute : data.getReferences().getRoutes()) {
+            for (final RouteV2Bean obaRoute : data.getReferences().getRoutes().values()) {
                 final Route route = new Route();
                 route.setId(obaRoute.getId());
                 route.setAgencyId(obaRoute.getAgencyId());
@@ -112,7 +113,7 @@ public final class ScheduleForStopHttpResponseHandler implements ResponseHandler
                 route.setType(obaRoute.getType());
                 routesById.put(route.getId(), route);
             }
-            for (final StopV2Bean obaStop : data.getReferences().getStops()) {
+            for (final StopV2Bean obaStop : data.getReferences().getStops().values()) {
                 final Stop stop = new Stop();
                 stop.setId(obaStop.getId());
                 stop.setCode(Integer.valueOf(obaStop.getCode()));
@@ -127,6 +128,7 @@ public final class ScheduleForStopHttpResponseHandler implements ResponseHandler
             }
 
             final StopScheduleV2Bean obaStopSchedule = data.getEntry();
+            final References obaReferences = data.getReferences();
 
             stopSchedule.setStop(stopsById.get(obaStopSchedule.getStopId()));
             stopSchedule.setDate(new Date(obaStopSchedule.getDate()));

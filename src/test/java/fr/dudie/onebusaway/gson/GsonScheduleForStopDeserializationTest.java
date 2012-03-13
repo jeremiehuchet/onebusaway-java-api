@@ -11,7 +11,6 @@ import java.util.List;
 import org.apache.commons.lang.StringUtils;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.onebusaway.api.model.transit.EntryWithReferencesBean;
 import org.onebusaway.api.model.transit.StopRouteDirectionScheduleV2Bean;
 import org.onebusaway.api.model.transit.StopRouteScheduleV2Bean;
 import org.onebusaway.api.model.transit.StopScheduleV2Bean;
@@ -24,7 +23,9 @@ import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 
+import fr.dudie.onebusaway.model.v2.EntryWithReferences;
 import fr.dudie.onebusaway.model.v2.OneBusAwayResponse;
+import fr.dudie.onebusaway.model.v2.References;
 
 /**
  * Test Gson deserialization for a schedule-for-stop request.
@@ -44,6 +45,7 @@ public class GsonScheduleForStopDeserializationTest {
 
         // prepare gson instance
         final GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.registerTypeAdapter(References.class, new ReferencesDeserializer());
         gsonInstance = gsonBuilder.create();
     }
 
@@ -66,7 +68,7 @@ public class GsonScheduleForStopDeserializationTest {
         assertNotNull(response.getVersion());
         assertNotNull(response.getData());
 
-        final EntryWithReferencesBean<StopScheduleV2Bean> data = response.getData();
+        final EntryWithReferences<StopScheduleV2Bean> data = response.getData();
         assertNotNull(data.getReferences());
         assertNotNull(data.getEntry());
 
