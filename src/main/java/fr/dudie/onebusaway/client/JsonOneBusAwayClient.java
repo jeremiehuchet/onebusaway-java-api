@@ -15,26 +15,29 @@
 package fr.dudie.onebusaway.client;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.message.BasicNameValuePair;
+import org.onebusaway.api.model.transit.StopScheduleV2Bean;
+import org.onebusaway.api.model.transit.StopV2Bean;
+import org.onebusaway.api.model.transit.StopWithArrivalsAndDeparturesV2Bean;
+import org.onebusaway.api.model.transit.TripDetailsV2Bean;
+import org.onebusaway.transit_data.model.StopBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 import fr.dudie.onebusaway.gson.ReferencesDeserializer;
-import fr.dudie.onebusaway.model.ArrivalAndDeparture;
-import fr.dudie.onebusaway.model.BusStation;
-import fr.dudie.onebusaway.model.Stop;
-import fr.dudie.onebusaway.model.StopSchedule;
-import fr.dudie.onebusaway.model.TripSchedule;
+import fr.dudie.onebusaway.model.v2.OneBusAwayResponse;
+import fr.dudie.onebusaway.model.v2.OneBusAwaySimpleResponse;
 import fr.dudie.onebusaway.model.v2.References;
 
 /**
@@ -81,7 +84,8 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
     public JsonOneBusAwayClient(final HttpClient httpClient, final String url, final String key) {
 
         this.httpClient = httpClient;
-        this.baseUrl = String.format("%s%s?key=%s", url, OneBusAwayConstants.OBA_API_PATH, key);
+        this.baseUrl = String.format("%s%s?key=%s&includeReferences=%%b", url,
+                OneBusAwayConstants.OBA_API_PATH, key);
         final GsonBuilder gsonBuilder = new GsonBuilder();
         gsonBuilder.registerTypeAdapter(References.class, new ReferencesDeserializer());
         this.gsonInstance = gsonBuilder.create();
@@ -125,26 +129,27 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
      * @see IOneBusAwayClient#getStopsForRoute(String, String)
      */
     @Override
-    public final List<BusStation> getStopsForRoute(final String routeId, final String direction) {
+    public final List<StopV2Bean> getStopsForRoute(final String routeId, final String direction)
+            throws IOException {
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("stopsForRoute.start - routeId={}", routeId);
         }
-        final String urlCall = String.format(baseUrl, "stops-for-route", routeId);
+        final String urlCall = String.format(baseUrl, "stops-for-route", routeId, false);
 
-        final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(2);
-        params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "false"));
+        final Type type = new TypeToken<OneBusAwaySimpleResponse<List<StopV2Bean>>>() {
+        }.getType();
+        final GsonHttpResponseHandler<OneBusAwaySimpleResponse<List<StopV2Bean>>> handler;
+        handler = new GsonHttpResponseHandler<OneBusAwaySimpleResponse<List<StopV2Bean>>>(
+                gsonInstance, type);
 
-        final HttpGet request = createOBARequest(urlCall, params);
-
-        // final List<BusStation> stops = httpService.execute(request,
-        // new StopsForRouteHttpResponseHandler(direction));
-        final List<BusStation> stops = null;
+        final OneBusAwaySimpleResponse<List<StopV2Bean>> obaResponse = httpClient.execute(
+                new HttpGet(urlCall), handler);
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("stopsForRoute.end");
         }
-        return stops;
+        return obaResponse.getData();
     }
 
     /**
@@ -154,23 +159,26 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
      * @see IOneBusAwayClient#getTripDetails(String)
      */
     @Override
-    public final TripSchedule getTripDetails(final String tripId) throws IOException {
+    public final TripDetailsV2Bean getTripDetails(final String tripId) throws IOException {
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getTripDetails.start - tripId={}", tripId);
         }
-        final String urlCall = String.format(baseUrl, "trip-details", tripId);
+        final String urlCall = String.format(baseUrl, "trip-details", tripId, false);
 
-        final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(2);
-        params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "true"));
+        final Type type = new TypeToken<OneBusAwayResponse<TripDetailsV2Bean>>() {
+        }.getType();
+        final GsonHttpResponseHandler<OneBusAwayResponse<TripDetailsV2Bean>> handler;
+        handler = new GsonHttpResponseHandler<OneBusAwayResponse<TripDetailsV2Bean>>(gsonInstance,
+                type);
 
-        final TripSchedule schedule = httpClient.execute(createOBARequest(urlCall, params),
-                new TripDetailsHttpResponseHandler());
+        final OneBusAwayResponse<TripDetailsV2Bean> obaResponse = httpClient.execute(new HttpGet(
+                urlCall), handler);
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getTripDetails.end");
         }
-        return schedule;
+        return obaResponse.getData().getEntry();
     }
 
     /**
@@ -179,25 +187,28 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
      * @see IOneBusAwayClient#getArrivalsAndDeparturesForStop(String)
      */
     @Override
-    public final List<ArrivalAndDeparture> getArrivalsAndDeparturesForStop(final String stopId)
-            throws IOException {
+    public final StopWithArrivalsAndDeparturesV2Bean getArrivalsAndDeparturesForStop(
+            final String stopId) throws IOException {
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getArrivalsAndDeparturesForStop.start - stopId={}", stopId);
         }
-        final String urlCall = String.format(baseUrl, "arrivals-and-departures-for-stop", stopId);
+        final String urlCall = String.format(baseUrl, "arrivals-and-departures-for-stop", stopId,
+                false);
 
-        final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(2);
-        params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "false"));
+        final Type type = new TypeToken<OneBusAwaySimpleResponse<StopWithArrivalsAndDeparturesV2Bean>>() {
+        }.getType();
+        final GsonHttpResponseHandler<OneBusAwaySimpleResponse<StopWithArrivalsAndDeparturesV2Bean>> handler;
+        handler = new GsonHttpResponseHandler<OneBusAwaySimpleResponse<StopWithArrivalsAndDeparturesV2Bean>>(
+                gsonInstance, type);
 
-        final List<ArrivalAndDeparture> arrivalsAndDepartures = httpClient.execute(
-                createOBARequest(urlCall, params),
-                new ArrivalsAndDeparturesForStopHttpResponseHandler());
+        final OneBusAwaySimpleResponse<StopWithArrivalsAndDeparturesV2Bean> obaResponse = httpClient
+                .execute(new HttpGet(urlCall), handler);
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getArrivalsAndDeparturesForStop.end");
         }
-        return arrivalsAndDepartures;
+        return obaResponse.getData();
     }
 
     /**
@@ -207,25 +218,29 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
      * @see IOneBusAwayClient#getScheduleForStop(String, Date)
      */
     @Override
-    public final StopSchedule getScheduleForStop(final String stopId, final Date date)
-            throws IOException {
+    public final OneBusAwayResponse<StopScheduleV2Bean> getScheduleForStop(final String stopId,
+            final Date date) throws IOException {
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getScheduleForStop.start - stopId={}", stopId);
         }
-        final String urlCall = String.format(baseUrl, "schedule-for-stop", stopId);
+        final StringBuilder urlCall = new StringBuilder();
+        urlCall.append(String.format(baseUrl, "schedule-for-stop", stopId, true));
+        urlCall.append("&date=").append(obaSimpleDateFormat.format(date));
 
-        final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(2);
-        params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "true"));
-        params.add(new BasicNameValuePair("date", obaSimpleDateFormat.format(date)));
+        final Type type = new TypeToken<OneBusAwayResponse<StopScheduleV2Bean>>() {
+        }.getType();
+        final GsonHttpResponseHandler<OneBusAwayResponse<StopScheduleV2Bean>> handler;
+        handler = new GsonHttpResponseHandler<OneBusAwayResponse<StopScheduleV2Bean>>(gsonInstance,
+                type);
 
-        final StopSchedule schedule = httpClient.execute(createOBARequest(urlCall, params),
-                new ScheduleForStopHttpResponseHandler(gsonInstance));
+        final OneBusAwayResponse<StopScheduleV2Bean> obaResponse = httpClient.execute(new HttpGet(
+                urlCall.toString()), handler);
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getScheduleForStop.end");
         }
-        return schedule;
+        return obaResponse;
     }
 
     /**
@@ -235,22 +250,25 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
      * @see IOneBusAwayClient#getStop(String)
      */
     @Override
-    public final Stop getStop(final String stopId) throws IOException {
+    public final StopBean getStop(final String stopId) throws IOException {
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getStop.start - stopId={}", stopId);
         }
-        final String urlCall = String.format(baseUrl, "stop", stopId);
+        final String urlCall = String.format(baseUrl, "stop", stopId, false);
 
-        final List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>(1);
-        params.add(new BasicNameValuePair(OBA_INCLUDE_REFERENCE, "true"));
+        final Type type = new TypeToken<OneBusAwaySimpleResponse<StopBean>>() {
+        }.getType();
+        final GsonHttpResponseHandler<OneBusAwaySimpleResponse<StopBean>> handler;
+        handler = new GsonHttpResponseHandler<OneBusAwaySimpleResponse<StopBean>>(gsonInstance,
+                type);
 
-        final Stop stop = httpClient.execute(createOBARequest(urlCall, params),
-                new StopHttpResponseHandler());
+        final OneBusAwaySimpleResponse<StopBean> obaResponse = httpClient.execute(new HttpGet(
+                urlCall), handler);
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("getStop.end");
         }
-        return stop;
+        return obaResponse.getData();
     }
 }

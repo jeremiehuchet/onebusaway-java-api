@@ -19,7 +19,6 @@ import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.List;
 import java.util.Properties;
 
 import junit.framework.TestCase;
@@ -32,14 +31,18 @@ import org.apache.http.conn.scheme.Scheme;
 import org.apache.http.conn.scheme.SchemeRegistry;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.SingleClientConnManager;
+import org.onebusaway.api.model.transit.ArrivalAndDepartureV2Bean;
+import org.onebusaway.api.model.transit.RouteV2Bean;
+import org.onebusaway.api.model.transit.StopRouteScheduleV2Bean;
+import org.onebusaway.api.model.transit.StopScheduleV2Bean;
+import org.onebusaway.api.model.transit.StopV2Bean;
+import org.onebusaway.api.model.transit.StopWithArrivalsAndDeparturesV2Bean;
+import org.onebusaway.api.model.transit.TripDetailsV2Bean;
+import org.onebusaway.transit_data.model.StopBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import fr.dudie.onebusaway.model.ArrivalAndDeparture;
-import fr.dudie.onebusaway.model.ScheduleStopTime;
-import fr.dudie.onebusaway.model.Stop;
-import fr.dudie.onebusaway.model.StopSchedule;
-import fr.dudie.onebusaway.model.TripSchedule;
+import fr.dudie.onebusaway.model.v2.OneBusAwayResponse;
 
 /**
  * Test class for {@link OneBusAwayService}.
@@ -100,14 +103,12 @@ public class JsonOneBusAwayClientTest extends TestCase {
 
         LOGGER.info("testGetTripDetails.start");
 
-        TripSchedule schedule = null;
+        TripDetailsV2Bean schedule = null;
         schedule = obaClient.getTripDetails("2_10000");
 
         assertNotNull("no schedule returned by the api", schedule);
-        assertEquals("27 stop times should be returned by the api", 27, schedule.getStopTimes()
-                .size());
-        assertEquals("the first stop of this trip should be Saint Saëns", "Saint Saëns", schedule
-                .getStopTimes().get(0).getStop().getName());
+        assertEquals("27 stop times should be returned by the api", 27, schedule.getSchedule()
+                .getStopTimes().size());
 
         LOGGER.info("testGetTripDetails.end");
     }
@@ -122,14 +123,14 @@ public class JsonOneBusAwayClientTest extends TestCase {
 
         LOGGER.info("testGetArrivalsAndDeparturesForStop.start");
 
-        List<ArrivalAndDeparture> arrivalsAndDepartures = null;
+        StopWithArrivalsAndDeparturesV2Bean arrivalsAndDepartures = null;
         arrivalsAndDepartures = obaClient.getArrivalsAndDeparturesForStop("2_1212");
 
         assertNotNull("no arrivals and departures returned by the api", arrivalsAndDepartures);
-        for (final ArrivalAndDeparture aad : arrivalsAndDepartures) {
+        for (final ArrivalAndDepartureV2Bean aad : arrivalsAndDepartures.getArrivalsAndDepartures()) {
             assertTrue(StringUtils.isNotBlank(aad.getRouteId()));
             assertNotNull(aad.getDistanceFromStop());
-            assertTrue(StringUtils.isNotBlank(aad.getRouteLongName()));
+            // assertTrue(StringUtils.isNotBlank(aad.getRouteLongName()));
             assertTrue(StringUtils.isNotBlank(aad.getRouteShortName()));
             assertNotNull(aad.getScheduledArrivalTime());
             assertNotNull(aad.getServiceDate());
@@ -151,7 +152,7 @@ public class JsonOneBusAwayClientTest extends TestCase {
 
         LOGGER.info("testGetStop.start");
 
-        Stop stop = null;
+        StopBean stop = null;
         stop = obaClient.getStop("2_1167");
 
         assertNotNull("no stop returned by the api", stop);
@@ -159,7 +160,7 @@ public class JsonOneBusAwayClientTest extends TestCase {
                 .size());
         assertEquals("the name of the stop repbottb should be République Pré Botté",
                 "République Pré Botté", stop.getName());
-        assertEquals("the code of the stop repbottb should be 1167", 1167, stop.getCode());
+        assertEquals("the code of the stop repbottb should be 1167", "1167", stop.getCode());
 
         LOGGER.info("testGetStop.end");
     }
@@ -176,26 +177,31 @@ public class JsonOneBusAwayClientTest extends TestCase {
 
         LOGGER.info("testGetScheduleForStop.start");
 
-        StopSchedule schedule = null;
+        final OneBusAwayResponse<StopScheduleV2Bean> obaResponse;
+        final StopScheduleV2Bean schedule;
         final Calendar calendar = Calendar.getInstance();
         final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         calendar.setTime(sdf.parse("2012-03-10"));
-        schedule = obaClient.getScheduleForStop("2_1167", calendar.getTime());
+        obaResponse = obaClient.getScheduleForStop("2_1167", calendar.getTime());
+        schedule = obaResponse.getData().getEntry();
 
-        assertNotNull("no schedule returned by the api", schedule);
+        assertNotNull("no schedule returned by the api", obaResponse);
 
-        assertEquals("79 stop times should be returned by the api", 79, schedule.getStopTimes()
-                .size());
-        assertEquals("the stop id should be 2_1167", "2_1167", schedule.getStop().getId());
+        assertEquals("3 routes should have schedules", 3, schedule.getStopRouteSchedules().size());
+        assertEquals("the stop id should be 2_1167", "2_1167", schedule.getStopId());
+
+        final StopV2Bean stop = obaResponse.getData().getReferences().getStop(schedule.getStopId());
         assertEquals("the stop name should be République Pré Botté", "République Pré Botté",
-                schedule.getStop().getName());
-        assertEquals("5 lines should be return for this stop", 5, schedule.getStop().getRoutes()
-                .size());
+                stop.getName());
+        assertEquals("5 lines should be return for this stop", 5, stop.getRouteIds().size());
 
         int cpt = 0;
-        for (final ScheduleStopTime stopTime : schedule.getStopTimes()) {
-            if (stopTime.getRoute().getShortName().equals("53")) {
-                cpt++;
+        for (final StopRouteScheduleV2Bean stopTime : schedule.getStopRouteSchedules()) {
+            final RouteV2Bean route = obaResponse.getData().getReferences()
+                    .getRoute(stopTime.getRouteId());
+            if (route.getShortName().equals("53")) {
+                cpt = stopTime.getStopRouteDirectionSchedules().get(0).getScheduleStopTimes()
+                        .size();
             }
         }
         assertEquals("31 stop times should be returned by the api for line 53", 31, cpt);

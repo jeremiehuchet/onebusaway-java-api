@@ -1,15 +1,15 @@
 package fr.dudie.onebusaway.model.v2;
 
-public class OneBusAwayResponse<T> extends AbstractOneBusAwayResponse {
+public class OneBusAwaySimpleResponse<T> extends AbstractOneBusAwayResponse {
 
-    private EntryWithReferences<T> data;
+    private T data;
 
     /**
      * Gets the data.
      * 
      * @return the data
      */
-    public final EntryWithReferences<T> getData() {
+    public final T getData() {
 
         return data;
     }
@@ -20,7 +20,7 @@ public class OneBusAwayResponse<T> extends AbstractOneBusAwayResponse {
      * @param data
      *            the data to set
      */
-    public final void setData(final EntryWithReferences<T> data) {
+    public final void setData(final T data) {
 
         this.data = data;
     }

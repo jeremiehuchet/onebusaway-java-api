@@ -18,11 +18,13 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
-import fr.dudie.onebusaway.model.ArrivalAndDeparture;
-import fr.dudie.onebusaway.model.BusStation;
-import fr.dudie.onebusaway.model.Stop;
-import fr.dudie.onebusaway.model.StopSchedule;
-import fr.dudie.onebusaway.model.TripSchedule;
+import org.onebusaway.api.model.transit.StopScheduleV2Bean;
+import org.onebusaway.api.model.transit.StopV2Bean;
+import org.onebusaway.api.model.transit.StopWithArrivalsAndDeparturesV2Bean;
+import org.onebusaway.api.model.transit.TripDetailsV2Bean;
+import org.onebusaway.transit_data.model.StopBean;
+
+import fr.dudie.onebusaway.model.v2.OneBusAwayResponse;
 
 /**
  * Interface to query the Keolis API.
@@ -43,7 +45,7 @@ public interface IOneBusAwayClient {
      * @throws IOException
      *             an error occurred
      */
-    List<BusStation> getStopsForRoute(final String routeId, final String direction)
+    List<StopV2Bean> getStopsForRoute(final String routeId, final String direction)
             throws IOException;
 
     /**
@@ -55,7 +57,7 @@ public interface IOneBusAwayClient {
      * @throws IOException
      *             an error occurred
      */
-    TripSchedule getTripDetails(final String tripId) throws IOException;
+    TripDetailsV2Bean getTripDetails(final String tripId) throws IOException;
 
     /**
      * Gets arrivals and departures for stop.
@@ -66,7 +68,7 @@ public interface IOneBusAwayClient {
      * @throws IOException
      *             an error occurred
      */
-    List<ArrivalAndDeparture> getArrivalsAndDeparturesForStop(final String stopId)
+    StopWithArrivalsAndDeparturesV2Bean getArrivalsAndDeparturesForStop(final String stopId)
             throws IOException;
 
     /**
@@ -80,7 +82,8 @@ public interface IOneBusAwayClient {
      * @throws IOException
      *             an error occurred
      */
-    StopSchedule getScheduleForStop(final String stopId, final Date date) throws IOException;
+    OneBusAwayResponse<StopScheduleV2Bean> getScheduleForStop(final String stopId, final Date date)
+            throws IOException;
 
     /**
      * Gets schedule for a stop.
@@ -91,5 +94,5 @@ public interface IOneBusAwayClient {
      * @throws IOException
      *             an error occurred
      */
-    Stop getStop(final String stopId) throws IOException;
+    StopBean getStop(final String stopId) throws IOException;
 }
