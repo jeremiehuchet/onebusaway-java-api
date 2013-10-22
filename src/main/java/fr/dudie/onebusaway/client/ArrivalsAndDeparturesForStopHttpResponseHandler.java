@@ -29,6 +29,7 @@ import org.slf4j.LoggerFactory;
 
 import fr.dudie.onebusaway.exceptions.OneBusAwayException;
 import fr.dudie.onebusaway.model.ArrivalAndDeparture;
+import fr.dudie.onebusaway.model.Time;
 
 /**
  * Handles responses for a call to the "arrivals-and-departures-for-stop" method of the OneBusAway
@@ -105,18 +106,15 @@ public final class ArrivalsAndDeparturesForStopHttpResponseHandler implements
         final ArrivalAndDeparture arrivalAndDeparture = new ArrivalAndDeparture();
         arrivalAndDeparture.setDistanceFromStop(jsonArrivalAndDeparture
                 .optDouble("distanceFromStop"));
-        arrivalAndDeparture.setScheduledArrivalTime(OneBusAwayUtils
-                .dateFromTimestamp(jsonArrivalAndDeparture.optLong("scheduledArrivalTime")));
-        arrivalAndDeparture.setScheduledDepartureTime(OneBusAwayUtils
-                .dateFromTimestamp(jsonArrivalAndDeparture.optLong("scheduledDepartureTime")));
+        arrivalAndDeparture.setScheduledArrivalTime(new Time(jsonArrivalAndDeparture.optLong("scheduledArrivalTime")));
+        arrivalAndDeparture.setScheduledDepartureTime(new Time(jsonArrivalAndDeparture.optLong("scheduledDepartureTime")));
         arrivalAndDeparture.setTripHeadsign(jsonArrivalAndDeparture.optString("tripHeadsign"));
         arrivalAndDeparture.setTripId(jsonArrivalAndDeparture.optString("tripId"));
         arrivalAndDeparture.setRouteId(jsonArrivalAndDeparture.optString("routeId"));
         arrivalAndDeparture.setRouteLongName(jsonArrivalAndDeparture.optString("routeLongName"));
         arrivalAndDeparture.setRouteShortName(jsonArrivalAndDeparture.optString("routeShortName"));
 
-        arrivalAndDeparture.setServiceDate(OneBusAwayUtils
-                .dateFromTimestamp(jsonArrivalAndDeparture.optLong("serviceDate")));
+        arrivalAndDeparture.setServiceDate(new Time(jsonArrivalAndDeparture.optLong("serviceDate")));
         arrivalAndDeparture.setStopSequence(jsonArrivalAndDeparture.optInt("stopSequence"));
         arrivalAndDeparture.setStopId(jsonArrivalAndDeparture.optString("stopId"));
 

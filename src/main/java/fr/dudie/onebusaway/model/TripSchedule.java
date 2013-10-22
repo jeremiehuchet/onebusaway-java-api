@@ -21,17 +21,15 @@ import java.util.List;
  * Class representing a trip schedule.
  * 
  * @author Olivier Boudet
+ * @author Jeremie Huchet
  */
 public class TripSchedule {
 
     /** List of stop times. */
     private final List<TripStopTime> stopTimes;
 
-    /** Id of the previous trip; */
-    private String previousTripId;
-
-    /** Id of the next trip. */
-    private String nextTripId;
+    /** The route. */
+    private Route route;
 
     public TripSchedule() {
 
@@ -49,45 +47,38 @@ public class TripSchedule {
     }
 
     /**
-     * Gets the previousTripId.
+     * Gets the route.
      * 
-     * @return the previousTripId
+     * @return the route
      */
-    public String getPreviousTripId() {
-
-        return previousTripId;
+    public Route getRoute() {
+        return route;
     }
 
     /**
-     * Sets the previousTripId.
+     * Sets the route.
      * 
-     * @param previousTripId
-     *            the previousTripId to set
+     * @param route
+     *            the route to set
      */
-    public void setPreviousTripId(final String previousTripId) {
-
-        this.previousTripId = previousTripId;
+    public void setRoute(Route route) {
+        this.route = route;
     }
 
-    /**
-     * Gets the nextTripId.
+    /*
+     * (non-Javadoc)
      * 
-     * @return the nextTripId
+     * @see java.lang.Object#toString()
      */
-    public String getNextTripId() {
-
-        return nextTripId;
-    }
-
-    /**
-     * Sets the nextTripId.
-     * 
-     * @param nextTripId
-     *            the nextTripId to set
-     */
-    public void setNextTripId(final String nextTripId) {
-
-        this.nextTripId = nextTripId;
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("TripSchedule [stopTimes=");
+        builder.append(stopTimes);
+        builder.append(", route=");
+        builder.append(route);
+        builder.append("]");
+        return builder.toString();
     }
 
 }

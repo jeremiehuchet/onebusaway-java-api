@@ -96,7 +96,6 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
             params.append("=").append(param.getValue());
         }
 
-        LOGGER.info(path.concat(params.toString()));
         final HttpGet req = new HttpGet(path.concat(params.toString()));
         req.addHeader(H_ACCEPT, "text/json");
         req.addHeader(H_ACCEPT, "application/json");

@@ -32,6 +32,7 @@ import fr.dudie.onebusaway.model.Route;
 import fr.dudie.onebusaway.model.ScheduleStopTime;
 import fr.dudie.onebusaway.model.Stop;
 import fr.dudie.onebusaway.model.StopSchedule;
+import fr.dudie.onebusaway.model.Time;
 
 /**
  * Handles responses for a call to the "schedule-for-stop" method of the OneBusAway API.
@@ -138,9 +139,9 @@ public final class ScheduleForStopHttpResponseHandler implements ResponseHandler
 
         final ScheduleStopTime scheduleStopTime = new ScheduleStopTime();
 
-        scheduleStopTime.setArrivalTime(OneBusAwayUtils.dateFromTimestamp(jsonScheduleStopTime
+        scheduleStopTime.setArrivalTime(new Time(jsonScheduleStopTime
                 .optLong("arrivalTime")));
-        scheduleStopTime.setDepartureTime(OneBusAwayUtils.dateFromTimestamp(jsonScheduleStopTime
+        scheduleStopTime.setDepartureTime(new Time(jsonScheduleStopTime
                 .optLong("departureTime")));
         scheduleStopTime.setTripId(jsonScheduleStopTime.optString("tripId"));
         scheduleStopTime.setHeadsign(headSign);

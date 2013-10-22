@@ -20,6 +20,7 @@ import java.util.List;
 
 /**
  * @author Olivier Boudet
+ * @author Jeremie Huchet
  */
 public class StopSchedule {
 
@@ -27,11 +28,15 @@ public class StopSchedule {
 
     private Stop stop;
 
+    /** List of routes for the stop times. */
+    private final List<Route> routes;
+
     /** List of stop times for the route and the stop. */
     private final List<ScheduleStopTime> stopTimes;
 
     public StopSchedule() {
 
+        routes = new ArrayList<Route>();
         stopTimes = new ArrayList<ScheduleStopTime>();
     }
 
@@ -78,6 +83,16 @@ public class StopSchedule {
     }
 
     /**
+     * Gets the routes.
+     * 
+     * @return the routes
+     */
+    public List<Route> getRoutes() {
+
+        return routes;
+    }
+
+    /**
      * Gets the stopTimes.
      * 
      * @return the stopTimes
@@ -87,22 +102,18 @@ public class StopSchedule {
         return stopTimes;
     }
 
-    /*
-     * (non-javadoc)
-     * @see java.lang.Object#toString()
-     */
     @Override
     public String toString() {
-
-        final StringBuilder builder = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
         builder.append("StopSchedule [date=");
         builder.append(date);
         builder.append(", stop=");
         builder.append(stop);
+        builder.append(", routes=");
+        builder.append(routes);
         builder.append(", stopTimes=");
         builder.append(stopTimes);
         builder.append("]");
         return builder.toString();
     }
-
 }

@@ -213,6 +213,76 @@ public class Route {
         this.agencyId = agencyId;
     }
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#hashCode()
+     */
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((agencyId == null) ? 0 : agencyId.hashCode());
+        result = prime * result + ((color == null) ? 0 : color.hashCode());
+        result = prime * result + ((description == null) ? 0 : description.hashCode());
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        result = prime * result + ((longName == null) ? 0 : longName.hashCode());
+        result = prime * result + ((shortName == null) ? 0 : shortName.hashCode());
+        result = prime * result + ((textColor == null) ? 0 : textColor.hashCode());
+        result = prime * result + type;
+        return result;
+    }
+
+    /* (non-Javadoc)
+     * @see java.lang.Object#equals(java.lang.Object)
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Route other = (Route) obj;
+        if (agencyId == null) {
+            if (other.agencyId != null)
+                return false;
+        } else if (!agencyId.equals(other.agencyId))
+            return false;
+        if (color == null) {
+            if (other.color != null)
+                return false;
+        } else if (!color.equals(other.color))
+            return false;
+        if (description == null) {
+            if (other.description != null)
+                return false;
+        } else if (!description.equals(other.description))
+            return false;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        if (longName == null) {
+            if (other.longName != null)
+                return false;
+        } else if (!longName.equals(other.longName))
+            return false;
+        if (shortName == null) {
+            if (other.shortName != null)
+                return false;
+        } else if (!shortName.equals(other.shortName))
+            return false;
+        if (textColor == null) {
+            if (other.textColor != null)
+                return false;
+        } else if (!textColor.equals(other.textColor))
+            return false;
+        if (type != other.type)
+            return false;
+        return true;
+    }
+
     /*
      * (non-javadoc)
      * @see java.lang.Object#toString()

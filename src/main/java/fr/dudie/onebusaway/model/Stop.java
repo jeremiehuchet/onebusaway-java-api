@@ -14,8 +14,6 @@
  */
 package fr.dudie.onebusaway.model;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Class representing a OneBusAway stop element.
@@ -41,14 +39,6 @@ public class Stop {
 
     /** Code of the stop. */
     private int code;
-
-    /** All route serving this stop. */
-    private final List<Route> routes;
-
-    public Stop() {
-
-        routes = new ArrayList<Route>();
-    }
 
     /**
      * Gets the id.
@@ -174,16 +164,6 @@ public class Stop {
     public void setCode(final int code) {
 
         this.code = code;
-    }
-
-    /**
-     * Gets the routes of the stop.
-     * 
-     * @return the routes
-     */
-    public List<Route> getRoutes() {
-
-        return routes;
     }
 
 }

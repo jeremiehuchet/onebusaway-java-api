@@ -146,8 +146,6 @@ public class JsonOneBusAwayClientTest {
         stop = obaClient.getStop("2_1167");
 
         assertNotNull("no stop returned by the api", stop);
-        assertEquals("5 routes should be returned for the stop repbottb", 5, stop.getRoutes()
-                .size());
         assertEquals("the name of the stop repbottb should be République Pré Botté",
                 "République Pré Botté", stop.getName());
         assertEquals("the code of the stop repbottb should be 1167", 1167, stop.getCode());
@@ -181,8 +179,6 @@ public class JsonOneBusAwayClientTest {
         assertEquals("the stop id should be 2_1167", "2_1167", schedule.getStop().getId());
         assertEquals("the stop name should be République Pré Botté", "République Pré Botté",
                 schedule.getStop().getName());
-        assertEquals("5 lines should be return for this stop", 5, schedule.getStop().getRoutes()
-                .size());
 
         int cpt = 0;
         for (final ScheduleStopTime stopTime : schedule.getStopTimes()) {

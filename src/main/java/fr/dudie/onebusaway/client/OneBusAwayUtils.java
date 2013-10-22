@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 import fr.dudie.onebusaway.exceptions.OneBusAwayException;
 import fr.dudie.onebusaway.model.Route;
 import fr.dudie.onebusaway.model.Stop;
+import fr.dudie.onebusaway.model.Time;
 
 /**
  * @author Olivier Boudet
@@ -69,36 +70,6 @@ public final class OneBusAwayUtils {
             throw new OneBusAwayException(message, null);
         }
         return jsonResult.getJSONObject("data");
-    }
-
-    /**
-     * Convert a timestamp to a Date.
-     * 
-     * @param timestamp
-     *            timestamp to convert
-     * @return the date
-     */
-    public static Date dateFromTimestamp(final Long timestamp) {
-
-        return dateFromTimestamps(timestamp, (long) 0);
-
-    }
-
-    /**
-     * Add two timestamps and returns a Date.
-     * 
-     * @param timestamp1
-     *            first timestamp
-     * @param timestamp2
-     *            second timestamp
-     * @return the date
-     */
-    public static Date dateFromTimestamps(final Long timestamp1, final Long timestamp2) {
-
-        final Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(timestamp1 + timestamp2 * 1000);
-        return calendar.getTime();
-
     }
 
     /**
@@ -162,14 +133,9 @@ public final class OneBusAwayUtils {
         final Stop stop = new Stop();
         stop.setId(jsonStop.optString("id"));
         stop.setLon(jsonStop.optDouble("lon"));
-        stop.setLat(jsonStop.optDouble("lon"));
-        stop.setDirection(jsonStop.optString("direction"));
+        stop.setLat(jsonStop.optDouble("lat"));
         stop.setName(jsonStop.optString("name"));
         stop.setCode(jsonStop.optInt("code"));
-        final JSONArray jsonRoutes = jsonStop.optJSONArray("routeIds");
-        for (int i = 0; !jsonRoutes.isNull(i); i++) {
-            stop.getRoutes().add(routes.get(jsonRoutes.optString(i)));
-        }
 
         return stop;
     }

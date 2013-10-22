@@ -29,6 +29,7 @@ import org.slf4j.LoggerFactory;
 import fr.dudie.onebusaway.exceptions.OneBusAwayException;
 import fr.dudie.onebusaway.model.Route;
 import fr.dudie.onebusaway.model.Stop;
+import fr.dudie.onebusaway.model.Time;
 import fr.dudie.onebusaway.model.TripSchedule;
 import fr.dudie.onebusaway.model.TripStopTime;
 
@@ -85,9 +86,6 @@ public final class TripDetailsHttpResponseHandler implements ResponseHandler<Tri
                                     stops));
                 }
 
-                schedule.setPreviousTripId(schedules.optString("previousTripId"));
-                schedule.setNextTripId(schedules.optString("nextTripId"));
-
             }
         } catch (final JSONException e) {
             LOGGER.error("error while parsing the response from OneBusAway api", e);
@@ -120,11 +118,8 @@ public final class TripDetailsHttpResponseHandler implements ResponseHandler<Tri
 
         final TripStopTime stopTime = new TripStopTime();
         stopTime.setStop(stops.get(jsonObject.optString("stopId")));
-        stopTime.setArrivalTime(OneBusAwayUtils.dateFromTimestamps(serviceDate,
-                jsonObject.optLong("arrivalTime")));
-        stopTime.setDepartureTime(OneBusAwayUtils.dateFromTimestamps(serviceDate,
-                jsonObject.optLong("departureTime")));
-        stopTime.setDistanceAlongTrip(jsonObject.optDouble("distanceAlongTrip"));
+        stopTime.setArrivalTime(new Time(jsonObject.optLong("arrivalTime") * 1000));
+        stopTime.setDepartureTime(new Time(jsonObject.optLong("departureTime") * 1000));
         stopTime.setStopHeadsign(jsonObject.optString("stopHeadsign"));
 
         return stopTime;
