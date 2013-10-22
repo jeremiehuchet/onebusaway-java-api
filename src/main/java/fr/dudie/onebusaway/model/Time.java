@@ -12,26 +12,29 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package fr.dudie.onebusaway.client;
+package fr.dudie.onebusaway.model;
 
-/**
- * Contains constants for OneBusAway API.
- * 
- * @author Olivier Boudet
- */
-public final class OneBusAwayConstants {
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-    /** Avoid instantiation. */
-    private OneBusAwayConstants() {
+public class Time extends Date {
 
+    private static final long serialVersionUID = -985402416765605536L;
+
+    private static final String TIME_FORMAT = "HH:mm";
+
+    public Time(final long date) {
+        super(date);
     }
 
-    /** OneBusAway API version. */
-    public static final String OBA_API_VERSION = "version";
+    @Override
+    public String toString() {
+        return new SimpleDateFormat(TIME_FORMAT).format(this);
+    }
 
-    /** OneBusAway API version. */
-    public static final String OBA_API_KEY = "key";
-
-    /** The path to append to the OneBusAway API to get JSON data. */
-    public static final String OBA_API_PATH = "/where/%s/%s.json";
+    public static Time from(final String s) throws ParseException {
+        final Date d = new SimpleDateFormat(TIME_FORMAT).parse(s);
+        return new Time(d.getTime());
+    }
 }

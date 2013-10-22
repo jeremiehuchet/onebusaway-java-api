@@ -16,15 +16,12 @@ package fr.dudie.onebusaway.client;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.List;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.http.client.HttpClient;
 import org.apache.http.conn.ClientConnectionManager;
 import org.apache.http.conn.scheme.PlainSocketFactory;
@@ -39,9 +36,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import fr.dudie.junit.rules.RunWithWebServer;
-import fr.dudie.onebusaway.model.ArrivalAndDeparture;
 import fr.dudie.onebusaway.model.ScheduleStopTime;
-import fr.dudie.onebusaway.model.Stop;
 import fr.dudie.onebusaway.model.StopSchedule;
 import fr.dudie.onebusaway.model.TripSchedule;
 
@@ -59,7 +54,7 @@ public class JsonOneBusAwayClientTest {
     /** Run a web server. */
     @Rule
     public static final RunWithWebServer SERVER = new RunWithWebServer("/www");
-
+    
     /** The tested OneBusAway client. */
     private JsonOneBusAwayClient obaClient;
 
@@ -90,7 +85,7 @@ public class JsonOneBusAwayClientTest {
         LOGGER.info("testGetTripDetails.start");
 
         TripSchedule schedule = null;
-        schedule = obaClient.getTripDetails("2_10000");
+        schedule = obaClient.getTripDetails("1_1012");
 
         assertNotNull("no schedule returned by the api", schedule);
         assertEquals("20 stop times should be returned by the api", 20, schedule.getStopTimes()
@@ -99,60 +94,6 @@ public class JsonOneBusAwayClientTest {
                 .getStopTimes().get(0).getStop().getName());
 
         LOGGER.info("testGetTripDetails.end");
-    }
-
-    /**
-     * Test method for {@link OneBusAwayService#getArrivalsAndDeparturesForStop(String)}.
-     * 
-     * @throws IOException
-     *             an error occurred
-     */
-    @Test
-    public final void testGetArrivalsAndDeparturesForStop() throws IOException {
-
-        LOGGER.info("testGetArrivalsAndDeparturesForStop.start");
-
-        List<ArrivalAndDeparture> arrivalsAndDepartures = null;
-        arrivalsAndDepartures = obaClient.getArrivalsAndDeparturesForStop("2_1212");
-
-        assertNotNull("no arrivals and departures returned by the api", arrivalsAndDepartures);
-        for (final ArrivalAndDeparture aad : arrivalsAndDepartures) {
-            assertTrue(StringUtils.isNotBlank(aad.getRouteId()));
-            assertNotNull(aad.getDistanceFromStop());
-            assertTrue(StringUtils.isNotBlank(aad.getRouteLongName()));
-            assertTrue(StringUtils.isNotBlank(aad.getRouteShortName()));
-            assertNotNull(aad.getScheduledArrivalTime());
-            assertNotNull(aad.getServiceDate());
-            assertTrue(StringUtils.isNotBlank(aad.getStopId()));
-            assertTrue(StringUtils.isNotBlank(aad.getTripHeadsign()));
-            assertNotNull(aad.getStopSequence());
-        }
-
-        LOGGER.info("testGetArrivalsAndDeparturesForStop.end");
-    }
-
-    /**
-     * Test method for {@link OneBusAwayService#getStop(String)}.
-     * 
-     * @throws IOException
-     *             an error occurred
-     */
-    @Test
-    public final void testGetStop() throws IOException {
-
-        LOGGER.info("testGetStop.start");
-
-        Stop stop = null;
-        stop = obaClient.getStop("2_1167");
-
-        assertNotNull("no stop returned by the api", stop);
-        assertEquals("5 routes should be returned for the stop repbottb", 5, stop.getRoutes()
-                .size());
-        assertEquals("the name of the stop repbottb should be République Pré Botté",
-                "République Pré Botté", stop.getName());
-        assertEquals("the code of the stop repbottb should be 1167", 1167, stop.getCode());
-
-        LOGGER.info("testGetStop.end");
     }
 
     /**
@@ -168,21 +109,19 @@ public class JsonOneBusAwayClientTest {
 
         LOGGER.info("testGetScheduleForStop.start");
 
-        StopSchedule schedule = null;
         final Calendar calendar = Calendar.getInstance();
         final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        calendar.setTime(sdf.parse("2012-03-10"));
-        schedule = obaClient.getScheduleForStop("2_1167", calendar.getTime());
+        calendar.setTime(sdf.parse("2012-08-18"));
+
+        final StopSchedule schedule = obaClient.getScheduleForStop("1_1017", calendar.getTime());
 
         assertNotNull("no schedule returned by the api", schedule);
 
         assertEquals("172 stop times should be returned by the api", 172, schedule.getStopTimes()
                 .size());
-        assertEquals("the stop id should be 2_1167", "2_1167", schedule.getStop().getId());
-        assertEquals("the stop name should be République Pré Botté", "République Pré Botté",
+        assertEquals("the stop id should be 1_1017", "1_1017", schedule.getStop().getId());
+        assertEquals("the stop name should be Les Halles", "L",
                 schedule.getStop().getName());
-        assertEquals("5 lines should be return for this stop", 5, schedule.getStop().getRoutes()
-                .size());
 
         int cpt = 0;
         for (final ScheduleStopTime stopTime : schedule.getStopTimes()) {

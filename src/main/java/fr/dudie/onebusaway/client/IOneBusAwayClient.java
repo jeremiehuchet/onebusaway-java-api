@@ -16,11 +16,7 @@ package fr.dudie.onebusaway.client;
 
 import java.io.IOException;
 import java.util.Date;
-import java.util.List;
 
-import fr.dudie.onebusaway.model.ArrivalAndDeparture;
-import fr.dudie.onebusaway.model.BusStation;
-import fr.dudie.onebusaway.model.Stop;
 import fr.dudie.onebusaway.model.StopSchedule;
 import fr.dudie.onebusaway.model.TripSchedule;
 
@@ -33,20 +29,6 @@ import fr.dudie.onebusaway.model.TripSchedule;
 public interface IOneBusAwayClient {
 
     /**
-     * Gets the bus stations for the given route.
-     * 
-     * @param routeId
-     *            the identifier of the route you wants the stops
-     * @param direction
-     *            direction of the route to get stops
-     * @return the list of stations for the given route
-     * @throws IOException
-     *             an error occurred
-     */
-    List<BusStation> getStopsForRoute(final String routeId, final String direction)
-            throws IOException;
-
-    /**
      * Gets the trip details.
      * 
      * @param tripId
@@ -56,18 +38,6 @@ public interface IOneBusAwayClient {
      *             an error occurred
      */
     TripSchedule getTripDetails(final String tripId) throws IOException;
-
-    /**
-     * Gets arrivals and departures for stop.
-     * 
-     * @param stopId
-     *            id of the stop to get arrivals and departures
-     * @return the list of arrivals and departures
-     * @throws IOException
-     *             an error occurred
-     */
-    List<ArrivalAndDeparture> getArrivalsAndDeparturesForStop(final String stopId)
-            throws IOException;
 
     /**
      * Gets schedule for a stop.
@@ -82,14 +52,4 @@ public interface IOneBusAwayClient {
      */
     StopSchedule getScheduleForStop(final String stopId, final Date date) throws IOException;
 
-    /**
-     * Gets schedule for a stop.
-     * 
-     * @param stopId
-     *            id of the stop to retrieve
-     * @return the stop with routes
-     * @throws IOException
-     *             an error occurred
-     */
-    Stop getStop(final String stopId) throws IOException;
 }

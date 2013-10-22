@@ -14,7 +14,8 @@
  */
 package fr.dudie.onebusaway.model;
 
-import java.util.Date;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 /**
  * Class representing a trip stop time.
@@ -27,13 +28,12 @@ public class TripStopTime {
     private Stop stop;
 
     /** Arrival time. */
-    private Date arrivalTime;
+    @SerializedName("arrival")
+    private Time arrivalTime;
 
     /** Departure time. */
-    private Date departureTime;
-
-    /** Distance along trip. */
-    private Double distanceAlongTrip;
+    @SerializedName("departure")
+    private Time departureTime;
 
     /** Stop headsign. */
     private String stopHeadsign;
@@ -64,7 +64,7 @@ public class TripStopTime {
      * 
      * @return the arrivalTime
      */
-    public Date getArrivalTime() {
+    public Time getArrivalTime() {
 
         return arrivalTime;
     }
@@ -75,7 +75,7 @@ public class TripStopTime {
      * @param arrivalTime
      *            the arrivalTime to set
      */
-    public void setArrivalTime(final Date arrivalTime) {
+    public void setArrivalTime(final Time arrivalTime) {
 
         this.arrivalTime = arrivalTime;
     }
@@ -85,7 +85,7 @@ public class TripStopTime {
      * 
      * @return the departureTime
      */
-    public Date getDepartureTime() {
+    public Time getDepartureTime() {
 
         return departureTime;
     }
@@ -96,30 +96,9 @@ public class TripStopTime {
      * @param departureTime
      *            the departureTime to set
      */
-    public void setDepartureTime(final Date departureTime) {
+    public void setDepartureTime(final Time departureTime) {
 
         this.departureTime = departureTime;
-    }
-
-    /**
-     * Gets the distanceAlongTrip.
-     * 
-     * @return the distanceAlongTrip
-     */
-    public Double getDistanceAlongTrip() {
-
-        return distanceAlongTrip;
-    }
-
-    /**
-     * Sets the distanceAlongTrip.
-     * 
-     * @param distanceAlongTrip
-     *            the distanceAlongTrip to set
-     */
-    public void setDistanceAlongTrip(final Double distanceAlongTrip) {
-
-        this.distanceAlongTrip = distanceAlongTrip;
     }
 
     /**
@@ -141,6 +120,26 @@ public class TripStopTime {
     public void setStopHeadsign(final String stopHeadsign) {
 
         this.stopHeadsign = stopHeadsign;
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see java.lang.Object#toString()
+     */
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("TripStopTime [stop=");
+        builder.append(stop);
+        builder.append(", arrivalTime=");
+        builder.append(arrivalTime);
+        builder.append(", departureTime=");
+        builder.append(departureTime);
+        builder.append(", stopHeadsign=");
+        builder.append(stopHeadsign);
+        builder.append("]");
+        return builder.toString();
     }
 
 }

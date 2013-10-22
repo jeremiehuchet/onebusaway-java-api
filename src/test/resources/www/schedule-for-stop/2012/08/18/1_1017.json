@@ -1,0 +1,5614 @@
+{
+  "date":"2012-08-18 00:00",
+  "stop":{
+    "id":"1_1017",
+    "lat":48.10834873,
+    "lon":-1.680175403,
+    "name":"Les Halles",
+    "code":1017
+  },
+  "routes":[
+    {
+      "id":"1_0005",
+      "textColor":"ffffff",
+      "color":"eb8200",
+      "description":"Majeure",
+      "longName":"Patton \u003c\u003e Lycée Bréquigny",
+      "shortName":"5",
+      "type":3,
+      "agencyId":"1"
+    },
+    {
+      "id":"1_0009",
+      "textColor":"ffffff",
+      "color":"004b9b",
+      "description":"Majeure",
+      "longName":"Saint Laurent \u003c\u003e Cleunay",
+      "shortName":"9",
+      "type":3,
+      "agencyId":"1"
+    },
+    {
+      "id":"1_0803",
+      "textColor":"FFFFFF",
+      "color":"009C99",
+      "description":"Spéciale",
+      "longName":"Rennes (République) \u003c\u003e Etangs d\u0027Apigné",
+      "shortName":"API",
+      "type":3,
+      "agencyId":"1"
+    },
+    {
+      "id":"1_0057",
+      "textColor":"ffffff",
+      "color":"a57223",
+      "description":"Suburbaine",
+      "longName":"Rennes (République) \u003c\u003e Saint-Jacques-de-la-Lande / Bruz",
+      "shortName":"57",
+      "type":3,
+      "agencyId":"1"
+    },
+    {
+      "id":"1_0001",
+      "textColor":"FFFFFF",
+      "color":"90C01B",
+      "description":"Majeure",
+      "longName":"Cesson-Sévigné (Chêne Germain) \u003c\u003e Chantepie (Rosa Parks)",
+      "shortName":"1",
+      "type":3,
+      "agencyId":"1"
+    }
+  ],
+  "stopTimes":[
+    {
+      "arrival":"1970-01-01 21:51",
+      "departure":"1970-01-01 21:51",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 23:46",
+      "departure":"1970-01-01 23:46",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 23:06",
+      "departure":"1970-01-01 23:06",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 01:01",
+      "departure":"1970-01-02 01:01",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 00:21",
+      "departure":"1970-01-02 00:21",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:56",
+      "departure":"1970-01-01 20:56",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:16",
+      "departure":"1970-01-01 21:16",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:52",
+      "departure":"1970-01-01 10:52",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:42",
+      "departure":"1970-01-01 09:42",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:36",
+      "departure":"1970-01-01 09:36",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:26",
+      "departure":"1970-01-01 17:26",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:06",
+      "departure":"1970-01-01 18:06",
+      "serviceId":"1_8",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 17:01",
+      "departure":"1970-01-01 17:01",
+      "serviceId":"1_8",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 18:06",
+      "departure":"1970-01-01 18:06",
+      "serviceId":"1_7",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 17:01",
+      "departure":"1970-01-01 17:01",
+      "serviceId":"1_7",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 16:01",
+      "departure":"1970-01-01 16:01",
+      "serviceId":"1_8",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 16:01",
+      "departure":"1970-01-01 16:01",
+      "serviceId":"1_7",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 15:01",
+      "departure":"1970-01-01 15:01",
+      "serviceId":"1_8",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 15:01",
+      "departure":"1970-01-01 15:01",
+      "serviceId":"1_7",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 14:01",
+      "departure":"1970-01-01 14:01",
+      "serviceId":"1_8",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 14:01",
+      "departure":"1970-01-01 14:01",
+      "serviceId":"1_7",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 15:07",
+      "departure":"1970-01-01 15:07",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:21",
+      "departure":"1970-01-01 20:21",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:22",
+      "departure":"1970-01-01 09:22",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:17",
+      "departure":"1970-01-01 10:17",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:22",
+      "departure":"1970-01-01 09:22",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:12",
+      "departure":"1970-01-01 09:12",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:12",
+      "departure":"1970-01-01 09:12",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:28",
+      "departure":"1970-01-01 14:28",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:28",
+      "departure":"1970-01-01 14:28",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:32",
+      "departure":"1970-01-01 09:32",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:32",
+      "departure":"1970-01-01 09:32",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:49",
+      "departure":"1970-01-01 14:49",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:49",
+      "departure":"1970-01-01 14:49",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:39",
+      "departure":"1970-01-01 14:39",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:39",
+      "departure":"1970-01-01 14:39",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:15",
+      "departure":"1970-01-01 15:15",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:15",
+      "departure":"1970-01-01 15:15",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:27",
+      "departure":"1970-01-01 11:27",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:05",
+      "departure":"1970-01-01 15:05",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:05",
+      "departure":"1970-01-01 15:05",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:35",
+      "departure":"1970-01-01 15:35",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:35",
+      "departure":"1970-01-01 15:35",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:25",
+      "departure":"1970-01-01 15:25",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:25",
+      "departure":"1970-01-01 15:25",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:55",
+      "departure":"1970-01-01 15:55",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:55",
+      "departure":"1970-01-01 15:55",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:40",
+      "departure":"1970-01-01 12:40",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:45",
+      "departure":"1970-01-01 15:45",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:45",
+      "departure":"1970-01-01 15:45",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:15",
+      "departure":"1970-01-01 16:15",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:15",
+      "departure":"1970-01-01 16:15",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:05",
+      "departure":"1970-01-01 16:05",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:05",
+      "departure":"1970-01-01 16:05",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:35",
+      "departure":"1970-01-01 16:35",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:35",
+      "departure":"1970-01-01 16:35",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:25",
+      "departure":"1970-01-01 16:25",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:25",
+      "departure":"1970-01-01 16:25",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:06",
+      "departure":"1970-01-01 19:06",
+      "serviceId":"1_8",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 19:06",
+      "departure":"1970-01-01 19:06",
+      "serviceId":"1_7",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 20:06",
+      "departure":"1970-01-01 20:06",
+      "serviceId":"1_7",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 20:06",
+      "departure":"1970-01-01 20:06",
+      "serviceId":"1_8",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 19:26",
+      "departure":"1970-01-01 19:26",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 06:46",
+      "departure":"1970-01-01 06:46",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 06:46",
+      "departure":"1970-01-01 06:46",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 07:44",
+      "departure":"1970-01-01 07:44",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 07:44",
+      "departure":"1970-01-01 07:44",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:01",
+      "departure":"1970-01-01 08:01",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:01",
+      "departure":"1970-01-01 08:01",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:19",
+      "departure":"1970-01-01 08:19",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:19",
+      "departure":"1970-01-01 08:19",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:31",
+      "departure":"1970-01-01 08:31",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:31",
+      "departure":"1970-01-01 08:31",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:01",
+      "departure":"1970-01-01 21:01",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:41",
+      "departure":"1970-01-01 08:41",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:41",
+      "departure":"1970-01-01 08:41",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:51",
+      "departure":"1970-01-01 08:51",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:51",
+      "departure":"1970-01-01 08:51",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:02",
+      "departure":"1970-01-01 09:02",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:02",
+      "departure":"1970-01-01 09:02",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:24",
+      "departure":"1970-01-01 20:24",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:24",
+      "departure":"1970-01-01 20:24",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:05",
+      "departure":"1970-01-01 20:05",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:05",
+      "departure":"1970-01-01 20:05",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:56",
+      "departure":"1970-01-01 18:56",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:55",
+      "departure":"1970-01-01 19:55",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:45",
+      "departure":"1970-01-01 19:45",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:55",
+      "departure":"1970-01-01 19:55",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:45",
+      "departure":"1970-01-01 19:45",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:35",
+      "departure":"1970-01-01 19:35",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:35",
+      "departure":"1970-01-01 19:35",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:25",
+      "departure":"1970-01-01 19:25",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:25",
+      "departure":"1970-01-01 19:25",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:15",
+      "departure":"1970-01-01 19:15",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:41",
+      "departure":"1970-01-01 21:41",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:56",
+      "departure":"1970-01-01 19:56",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:46",
+      "departure":"1970-01-01 17:46",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:46",
+      "departure":"1970-01-01 17:46",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:56",
+      "departure":"1970-01-01 17:56",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:56",
+      "departure":"1970-01-01 17:56",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:26",
+      "departure":"1970-01-01 17:26",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:26",
+      "departure":"1970-01-01 17:26",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:36",
+      "departure":"1970-01-01 17:36",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:36",
+      "departure":"1970-01-01 17:36",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:32",
+      "departure":"1970-01-01 15:32",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:05",
+      "departure":"1970-01-01 17:05",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:05",
+      "departure":"1970-01-01 17:05",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:16",
+      "departure":"1970-01-01 17:16",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:16",
+      "departure":"1970-01-01 17:16",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:45",
+      "departure":"1970-01-01 16:45",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:55",
+      "departure":"1970-01-01 13:55",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:45",
+      "departure":"1970-01-01 16:45",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:55",
+      "departure":"1970-01-01 16:55",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:55",
+      "departure":"1970-01-01 16:55",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:05",
+      "departure":"1970-01-01 19:05",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:05",
+      "departure":"1970-01-01 19:05",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:56",
+      "departure":"1970-01-01 17:56",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:15",
+      "departure":"1970-01-01 19:15",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:45",
+      "departure":"1970-01-01 18:45",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:45",
+      "departure":"1970-01-01 18:45",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:55",
+      "departure":"1970-01-01 18:55",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:55",
+      "departure":"1970-01-01 18:55",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:27",
+      "departure":"1970-01-01 16:27",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:25",
+      "departure":"1970-01-01 18:25",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:25",
+      "departure":"1970-01-01 18:25",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:35",
+      "departure":"1970-01-01 18:35",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:35",
+      "departure":"1970-01-01 18:35",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:06",
+      "departure":"1970-01-01 18:06",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:06",
+      "departure":"1970-01-01 18:06",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:16",
+      "departure":"1970-01-01 18:16",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:16",
+      "departure":"1970-01-01 18:16",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:17",
+      "departure":"1970-01-01 14:17",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:17",
+      "departure":"1970-01-01 14:17",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:26",
+      "departure":"1970-01-01 18:26",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:57",
+      "departure":"1970-01-01 14:57",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:57",
+      "departure":"1970-01-01 14:57",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:14",
+      "departure":"1970-01-01 20:14",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:14",
+      "departure":"1970-01-01 20:14",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:56",
+      "departure":"1970-01-01 16:56",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 00:21",
+      "departure":"1970-01-02 00:21",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 23:46",
+      "departure":"1970-01-01 23:46",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 23:46",
+      "departure":"1970-01-01 23:46",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:36",
+      "departure":"1970-01-01 14:36",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 23:06",
+      "departure":"1970-01-01 23:06",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 23:06",
+      "departure":"1970-01-01 23:06",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:51",
+      "departure":"1970-01-01 21:51",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:57",
+      "departure":"1970-01-01 15:57",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 01:01",
+      "departure":"1970-01-02 01:01",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 01:01",
+      "departure":"1970-01-02 01:01",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 00:21",
+      "departure":"1970-01-02 00:21",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:44",
+      "departure":"1970-01-01 20:44",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:44",
+      "departure":"1970-01-01 20:44",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:05",
+      "departure":"1970-01-01 12:05",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:31",
+      "departure":"1970-01-01 21:31",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:51",
+      "departure":"1970-01-01 21:51",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:11",
+      "departure":"1970-01-01 21:11",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:31",
+      "departure":"1970-01-01 21:31",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:20",
+      "departure":"1970-01-01 13:20",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:11",
+      "departure":"1970-01-01 21:11",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:54",
+      "departure":"1970-01-01 20:54",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:54",
+      "departure":"1970-01-01 20:54",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:07",
+      "departure":"1970-01-01 11:07",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:56",
+      "departure":"1970-01-01 10:56",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:56",
+      "departure":"1970-01-01 10:56",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:18",
+      "departure":"1970-01-01 11:18",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:07",
+      "departure":"1970-01-01 11:07",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:28",
+      "departure":"1970-01-01 11:28",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:18",
+      "departure":"1970-01-01 11:18",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:28",
+      "departure":"1970-01-01 11:28",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:38",
+      "departure":"1970-01-01 11:38",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:38",
+      "departure":"1970-01-01 11:38",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:59",
+      "departure":"1970-01-01 11:59",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:49",
+      "departure":"1970-01-01 11:49",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:49",
+      "departure":"1970-01-01 11:49",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:10",
+      "departure":"1970-01-01 12:10",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:59",
+      "departure":"1970-01-01 11:59",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:20",
+      "departure":"1970-01-01 12:20",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:10",
+      "departure":"1970-01-01 12:10",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:15",
+      "departure":"1970-01-01 10:15",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:15",
+      "departure":"1970-01-01 10:15",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:25",
+      "departure":"1970-01-01 10:25",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:25",
+      "departure":"1970-01-01 10:25",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:35",
+      "departure":"1970-01-01 10:35",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:35",
+      "departure":"1970-01-01 10:35",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:46",
+      "departure":"1970-01-01 10:46",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:46",
+      "departure":"1970-01-01 10:46",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:53",
+      "departure":"1970-01-01 09:53",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:42",
+      "departure":"1970-01-01 09:42",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:42",
+      "departure":"1970-01-01 09:42",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:04",
+      "departure":"1970-01-01 10:04",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:04",
+      "departure":"1970-01-01 10:04",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:53",
+      "departure":"1970-01-01 09:53",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:46",
+      "departure":"1970-01-01 10:46",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 10:46",
+      "departure":"1970-01-01 10:46",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 14:11",
+      "departure":"1970-01-01 14:11",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 14:11",
+      "departure":"1970-01-01 14:11",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 14:36",
+      "departure":"1970-01-01 14:36",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 13:16",
+      "departure":"1970-01-01 13:16",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 13:16",
+      "departure":"1970-01-01 13:16",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 13:46",
+      "departure":"1970-01-01 13:46",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 13:46",
+      "departure":"1970-01-01 13:46",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 22:26",
+      "departure":"1970-01-01 22:26",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:16",
+      "departure":"1970-01-01 12:16",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 12:16",
+      "departure":"1970-01-01 12:16",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 12:46",
+      "departure":"1970-01-01 12:46",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 12:46",
+      "departure":"1970-01-01 12:46",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 11:16",
+      "departure":"1970-01-01 11:16",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 11:16",
+      "departure":"1970-01-01 11:16",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 11:46",
+      "departure":"1970-01-01 11:46",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 11:46",
+      "departure":"1970-01-01 11:46",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 09:51",
+      "departure":"1970-01-01 09:51",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 09:51",
+      "departure":"1970-01-01 09:51",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 10:16",
+      "departure":"1970-01-01 10:16",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 10:16",
+      "departure":"1970-01-01 10:16",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 09:21",
+      "departure":"1970-01-01 09:21",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 09:21",
+      "departure":"1970-01-01 09:21",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 08:41",
+      "departure":"1970-01-01 08:41",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 08:21",
+      "departure":"1970-01-01 08:21",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 09:01",
+      "departure":"1970-01-01 09:01",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 08:41",
+      "departure":"1970-01-01 08:41",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 09:01",
+      "departure":"1970-01-01 09:01",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 07:56",
+      "departure":"1970-01-01 07:56",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 20:34",
+      "departure":"1970-01-01 20:34",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:21",
+      "departure":"1970-01-01 08:21",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 07:56",
+      "departure":"1970-01-01 07:56",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz via Ker-Lann"
+    },
+    {
+      "arrival":"1970-01-01 20:34",
+      "departure":"1970-01-01 20:34",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:06",
+      "departure":"1970-01-01 14:06",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:56",
+      "departure":"1970-01-01 13:56",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:06",
+      "departure":"1970-01-01 14:06",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:45",
+      "departure":"1970-01-01 13:45",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:56",
+      "departure":"1970-01-01 13:56",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:45",
+      "departure":"1970-01-01 13:45",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:34",
+      "departure":"1970-01-01 13:34",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:34",
+      "departure":"1970-01-01 13:34",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:23",
+      "departure":"1970-01-01 13:23",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:23",
+      "departure":"1970-01-01 13:23",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:13",
+      "departure":"1970-01-01 13:13",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:13",
+      "departure":"1970-01-01 13:13",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:02",
+      "departure":"1970-01-01 13:02",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:02",
+      "departure":"1970-01-01 13:02",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:52",
+      "departure":"1970-01-01 12:52",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:52",
+      "departure":"1970-01-01 12:52",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:41",
+      "departure":"1970-01-01 12:41",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:41",
+      "departure":"1970-01-01 12:41",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:31",
+      "departure":"1970-01-01 12:31",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:31",
+      "departure":"1970-01-01 12:31",
+      "serviceId":"1_7",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:20",
+      "departure":"1970-01-01 12:20",
+      "serviceId":"1_8",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:46",
+      "departure":"1970-01-01 21:46",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-02 00:56",
+      "departure":"1970-01-02 00:56",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:16",
+      "departure":"1970-01-01 20:16",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 20:16",
+      "departure":"1970-01-01 20:16",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 20:36",
+      "departure":"1970-01-01 20:36",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 20:36",
+      "departure":"1970-01-01 20:36",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 20:56",
+      "departure":"1970-01-01 20:56",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 20:56",
+      "departure":"1970-01-01 20:56",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 21:46",
+      "departure":"1970-01-01 21:46",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 21:16",
+      "departure":"1970-01-01 21:16",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 21:16",
+      "departure":"1970-01-01 21:16",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 18:56",
+      "departure":"1970-01-01 18:56",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 19:16",
+      "departure":"1970-01-01 19:16",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 19:16",
+      "departure":"1970-01-01 19:16",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-02 00:16",
+      "departure":"1970-01-02 00:16",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:56",
+      "departure":"1970-01-01 18:56",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 19:56",
+      "departure":"1970-01-01 19:56",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 19:56",
+      "departure":"1970-01-01 19:56",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 19:36",
+      "departure":"1970-01-01 19:36",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 19:36",
+      "departure":"1970-01-01 19:36",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 17:36",
+      "departure":"1970-01-01 17:36",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 17:56",
+      "departure":"1970-01-01 17:56",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 17:21",
+      "departure":"1970-01-01 17:21",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 17:36",
+      "departure":"1970-01-01 17:36",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 18:36",
+      "departure":"1970-01-01 18:36",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 18:36",
+      "departure":"1970-01-01 18:36",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 17:56",
+      "departure":"1970-01-01 17:56",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 18:16",
+      "departure":"1970-01-01 18:16",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 18:16",
+      "departure":"1970-01-01 18:16",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 16:41",
+      "departure":"1970-01-01 16:41",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 16:21",
+      "departure":"1970-01-01 16:21",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 16:21",
+      "departure":"1970-01-01 16:21",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 16:01",
+      "departure":"1970-01-01 16:01",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 16:01",
+      "departure":"1970-01-01 16:01",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 23:41",
+      "departure":"1970-01-01 23:41",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:21",
+      "departure":"1970-01-01 17:21",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 17:01",
+      "departure":"1970-01-01 17:01",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 17:01",
+      "departure":"1970-01-01 17:01",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 16:41",
+      "departure":"1970-01-01 16:41",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 15:16",
+      "departure":"1970-01-01 15:16",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 14:56",
+      "departure":"1970-01-01 14:56",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 14:56",
+      "departure":"1970-01-01 14:56",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 14:36",
+      "departure":"1970-01-01 14:36",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 15:36",
+      "departure":"1970-01-01 15:36",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 15:36",
+      "departure":"1970-01-01 15:36",
+      "serviceId":"1_7",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 23:01",
+      "departure":"1970-01-01 23:01",
+      "serviceId":"1_1",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:16",
+      "departure":"1970-01-01 15:16",
+      "serviceId":"1_8",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 09:17",
+      "departure":"1970-01-01 09:17",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:07",
+      "departure":"1970-01-01 09:07",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:27",
+      "departure":"1970-01-01 09:27",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:17",
+      "departure":"1970-01-01 09:17",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:57",
+      "departure":"1970-01-01 08:57",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:07",
+      "departure":"1970-01-01 09:07",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:57",
+      "departure":"1970-01-01 08:57",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:37",
+      "departure":"1970-01-01 08:37",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:37",
+      "departure":"1970-01-01 08:37",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:27",
+      "departure":"1970-01-01 08:27",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:47",
+      "departure":"1970-01-01 08:47",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:47",
+      "departure":"1970-01-01 08:47",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:17",
+      "departure":"1970-01-01 08:17",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 07:58",
+      "departure":"1970-01-01 07:58",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:27",
+      "departure":"1970-01-01 08:27",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:17",
+      "departure":"1970-01-01 08:17",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 07:58",
+      "departure":"1970-01-01 07:58",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 06:46",
+      "departure":"1970-01-01 06:46",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 06:46",
+      "departure":"1970-01-01 06:46",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:27",
+      "departure":"1970-01-01 16:27",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:27",
+      "departure":"1970-01-01 16:27",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:19",
+      "departure":"1970-01-01 16:19",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:09",
+      "departure":"1970-01-01 16:09",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:19",
+      "departure":"1970-01-01 16:19",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:09",
+      "departure":"1970-01-01 16:09",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:59",
+      "departure":"1970-01-01 15:59",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:59",
+      "departure":"1970-01-01 15:59",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:07",
+      "departure":"1970-01-01 17:07",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:07",
+      "departure":"1970-01-01 17:07",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:57",
+      "departure":"1970-01-01 16:57",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:57",
+      "departure":"1970-01-01 16:57",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:47",
+      "departure":"1970-01-01 16:47",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:47",
+      "departure":"1970-01-01 16:47",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:37",
+      "departure":"1970-01-01 16:37",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:37",
+      "departure":"1970-01-01 16:37",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:19",
+      "departure":"1970-01-01 15:19",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:09",
+      "departure":"1970-01-01 15:09",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:09",
+      "departure":"1970-01-01 15:09",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:59",
+      "departure":"1970-01-01 14:59",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:59",
+      "departure":"1970-01-01 14:59",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:49",
+      "departure":"1970-01-01 14:49",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:49",
+      "departure":"1970-01-01 14:49",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:49",
+      "departure":"1970-01-01 15:49",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:49",
+      "departure":"1970-01-01 15:49",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:40",
+      "departure":"1970-01-01 15:40",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:40",
+      "departure":"1970-01-01 15:40",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:29",
+      "departure":"1970-01-01 15:29",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:29",
+      "departure":"1970-01-01 15:29",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:19",
+      "departure":"1970-01-01 15:19",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:57",
+      "departure":"1970-01-01 18:57",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:57",
+      "departure":"1970-01-01 18:57",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:07",
+      "departure":"1970-01-01 19:07",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:37",
+      "departure":"1970-01-01 18:37",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:27",
+      "departure":"1970-01-01 18:27",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:37",
+      "departure":"1970-01-01 18:37",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:47",
+      "departure":"1970-01-01 18:47",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:47",
+      "departure":"1970-01-01 18:47",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:27",
+      "departure":"1970-01-01 19:27",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:37",
+      "departure":"1970-01-01 19:37",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:37",
+      "departure":"1970-01-01 19:37",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:47",
+      "departure":"1970-01-01 19:47",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:07",
+      "departure":"1970-01-01 19:07",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:17",
+      "departure":"1970-01-01 19:17",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:17",
+      "departure":"1970-01-01 19:17",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:27",
+      "departure":"1970-01-01 19:27",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:37",
+      "departure":"1970-01-01 17:37",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:37",
+      "departure":"1970-01-01 17:37",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:47",
+      "departure":"1970-01-01 17:47",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:47",
+      "departure":"1970-01-01 17:47",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:17",
+      "departure":"1970-01-01 17:17",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:27",
+      "departure":"1970-01-01 17:27",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:27",
+      "departure":"1970-01-01 17:27",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:17",
+      "departure":"1970-01-01 17:17",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:17",
+      "departure":"1970-01-01 18:17",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:07",
+      "departure":"1970-01-01 18:07",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:27",
+      "departure":"1970-01-01 18:27",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:17",
+      "departure":"1970-01-01 18:17",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:57",
+      "departure":"1970-01-01 17:57",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:57",
+      "departure":"1970-01-01 17:57",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:07",
+      "departure":"1970-01-01 18:07",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:58",
+      "departure":"1970-01-01 10:58",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:08",
+      "departure":"1970-01-01 11:08",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:48",
+      "departure":"1970-01-01 10:48",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:48",
+      "departure":"1970-01-01 10:48",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:58",
+      "departure":"1970-01-01 10:58",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:18",
+      "departure":"1970-01-01 11:18",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:08",
+      "departure":"1970-01-01 11:08",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:18",
+      "departure":"1970-01-01 11:18",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:38",
+      "departure":"1970-01-01 11:38",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:38",
+      "departure":"1970-01-01 11:38",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:28",
+      "departure":"1970-01-01 11:28",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:28",
+      "departure":"1970-01-01 11:28",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:58",
+      "departure":"1970-01-01 11:58",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:58",
+      "departure":"1970-01-01 11:58",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:08",
+      "departure":"1970-01-01 12:08",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:48",
+      "departure":"1970-01-01 11:48",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:48",
+      "departure":"1970-01-01 11:48",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:37",
+      "departure":"1970-01-01 09:37",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:37",
+      "departure":"1970-01-01 09:37",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:27",
+      "departure":"1970-01-01 09:27",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:08",
+      "departure":"1970-01-01 10:08",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:57",
+      "departure":"1970-01-01 09:57",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:57",
+      "departure":"1970-01-01 09:57",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:47",
+      "departure":"1970-01-01 09:47",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:47",
+      "departure":"1970-01-01 09:47",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:28",
+      "departure":"1970-01-01 10:28",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:18",
+      "departure":"1970-01-01 10:18",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:18",
+      "departure":"1970-01-01 10:18",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:08",
+      "departure":"1970-01-01 10:08",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:38",
+      "departure":"1970-01-01 10:38",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:38",
+      "departure":"1970-01-01 10:38",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:28",
+      "departure":"1970-01-01 10:28",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:28",
+      "departure":"1970-01-01 13:28",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:28",
+      "departure":"1970-01-01 13:28",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:38",
+      "departure":"1970-01-01 13:38",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:38",
+      "departure":"1970-01-01 13:38",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:48",
+      "departure":"1970-01-01 13:48",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:48",
+      "departure":"1970-01-01 13:48",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:58",
+      "departure":"1970-01-01 13:58",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:58",
+      "departure":"1970-01-01 13:58",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:08",
+      "departure":"1970-01-01 14:08",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:18",
+      "departure":"1970-01-01 14:18",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:08",
+      "departure":"1970-01-01 14:08",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:18",
+      "departure":"1970-01-01 14:18",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:28",
+      "departure":"1970-01-01 14:28",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:28",
+      "departure":"1970-01-01 14:28",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:39",
+      "departure":"1970-01-01 14:39",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:39",
+      "departure":"1970-01-01 14:39",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:08",
+      "departure":"1970-01-01 12:08",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:18",
+      "departure":"1970-01-01 12:18",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:18",
+      "departure":"1970-01-01 12:18",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:28",
+      "departure":"1970-01-01 12:28",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:28",
+      "departure":"1970-01-01 12:28",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:38",
+      "departure":"1970-01-01 12:38",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:38",
+      "departure":"1970-01-01 12:38",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:48",
+      "departure":"1970-01-01 12:48",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:48",
+      "departure":"1970-01-01 12:48",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:58",
+      "departure":"1970-01-01 12:58",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:58",
+      "departure":"1970-01-01 12:58",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:08",
+      "departure":"1970-01-01 13:08",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:08",
+      "departure":"1970-01-01 13:08",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:18",
+      "departure":"1970-01-01 13:18",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:18",
+      "departure":"1970-01-01 13:18",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:09",
+      "departure":"1970-01-01 20:09",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:21",
+      "departure":"1970-01-01 20:21",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:21",
+      "departure":"1970-01-01 20:21",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:47",
+      "departure":"1970-01-01 19:47",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:57",
+      "departure":"1970-01-01 19:57",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:57",
+      "departure":"1970-01-01 19:57",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:09",
+      "departure":"1970-01-01 20:09",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:01",
+      "departure":"1970-01-01 22:01",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:01",
+      "departure":"1970-01-01 22:01",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:56",
+      "departure":"1970-01-01 22:56",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:56",
+      "departure":"1970-01-01 22:56",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 23:21",
+      "departure":"1970-01-01 23:21",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 23:21",
+      "departure":"1970-01-01 23:21",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 00:11",
+      "departure":"1970-01-02 00:11",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 23:46",
+      "departure":"1970-01-01 23:46",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 23:46",
+      "departure":"1970-01-01 23:46",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 00:36",
+      "departure":"1970-01-02 00:36",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 00:11",
+      "departure":"1970-01-02 00:11",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 00:36",
+      "departure":"1970-01-02 00:36",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 01:01",
+      "departure":"1970-01-02 01:01",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 01:01",
+      "departure":"1970-01-02 01:01",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:51",
+      "departure":"1970-01-01 20:51",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:51",
+      "departure":"1970-01-01 20:51",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:36",
+      "departure":"1970-01-01 20:36",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:36",
+      "departure":"1970-01-01 20:36",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:36",
+      "departure":"1970-01-01 21:36",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:36",
+      "departure":"1970-01-01 21:36",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:21",
+      "departure":"1970-01-01 21:21",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:21",
+      "departure":"1970-01-01 21:21",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:06",
+      "departure":"1970-01-01 21:06",
+      "serviceId":"1_7",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:06",
+      "departure":"1970-01-01 21:06",
+      "serviceId":"1_8",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:29",
+      "departure":"1970-01-01 10:29",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_5",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 10:53",
+      "departure":"1970-01-01 10:53",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 00:01",
+      "departure":"1970-01-02 00:01",
+      "serviceId":"1_5",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_5",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 06:46",
+      "departure":"1970-01-01 06:46",
+      "serviceId":"1_5",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 10:41",
+      "departure":"1970-01-01 10:41",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:15",
+      "departure":"1970-01-01 09:15",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:30",
+      "departure":"1970-01-01 09:30",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 09:45",
+      "departure":"1970-01-01 09:45",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:00",
+      "departure":"1970-01-01 10:00",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:14",
+      "departure":"1970-01-01 10:14",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 07:57",
+      "departure":"1970-01-01 07:57",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:15",
+      "departure":"1970-01-01 08:15",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:33",
+      "departure":"1970-01-01 08:33",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:45",
+      "departure":"1970-01-01 08:45",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 08:57",
+      "departure":"1970-01-01 08:57",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:21",
+      "departure":"1970-01-01 14:21",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:46",
+      "departure":"1970-01-01 14:46",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:33",
+      "departure":"1970-01-01 14:33",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:08",
+      "departure":"1970-01-01 14:08",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:03",
+      "departure":"1970-01-01 13:03",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:50",
+      "departure":"1970-01-01 12:50",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:55",
+      "departure":"1970-01-01 13:55",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:42",
+      "departure":"1970-01-01 13:42",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:29",
+      "departure":"1970-01-01 13:29",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 13:16",
+      "departure":"1970-01-01 13:16",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:45",
+      "departure":"1970-01-01 11:45",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:32",
+      "departure":"1970-01-01 11:32",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:19",
+      "departure":"1970-01-01 11:19",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:06",
+      "departure":"1970-01-01 11:06",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:37",
+      "departure":"1970-01-01 12:37",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:24",
+      "departure":"1970-01-01 12:24",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 12:11",
+      "departure":"1970-01-01 12:11",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 11:58",
+      "departure":"1970-01-01 11:58",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 14:58",
+      "departure":"1970-01-01 14:58",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:08",
+      "departure":"1970-01-01 15:08",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:19",
+      "departure":"1970-01-01 15:19",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:29",
+      "departure":"1970-01-01 15:29",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:39",
+      "departure":"1970-01-01 15:39",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:49",
+      "departure":"1970-01-01 15:49",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 15:59",
+      "departure":"1970-01-01 15:59",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:09",
+      "departure":"1970-01-01 16:09",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_4",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-02 00:01",
+      "departure":"1970-01-02 00:01",
+      "serviceId":"1_4",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_4",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 20:23",
+      "departure":"1970-01-01 20:23",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:08",
+      "departure":"1970-01-01 20:08",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:54",
+      "departure":"1970-01-01 20:54",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 20:39",
+      "departure":"1970-01-01 20:39",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:31",
+      "departure":"1970-01-01 21:31",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 21:11",
+      "departure":"1970-01-01 21:11",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:44",
+      "departure":"1970-01-01 19:44",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:54",
+      "departure":"1970-01-01 19:54",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:33",
+      "departure":"1970-01-01 19:33",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:23",
+      "departure":"1970-01-01 19:23",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:03",
+      "departure":"1970-01-01 19:03",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 19:13",
+      "departure":"1970-01-01 19:13",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:42",
+      "departure":"1970-01-01 18:42",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:52",
+      "departure":"1970-01-01 18:52",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:31",
+      "departure":"1970-01-01 18:31",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:21",
+      "departure":"1970-01-01 18:21",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:10",
+      "departure":"1970-01-01 18:10",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 18:00",
+      "departure":"1970-01-01 18:00",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:50",
+      "departure":"1970-01-01 17:50",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:40",
+      "departure":"1970-01-01 17:40",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:30",
+      "departure":"1970-01-01 17:30",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:19",
+      "departure":"1970-01-01 17:19",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 17:09",
+      "departure":"1970-01-01 17:09",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:59",
+      "departure":"1970-01-01 16:59",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:49",
+      "departure":"1970-01-01 16:49",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:39",
+      "departure":"1970-01-01 16:39",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:29",
+      "departure":"1970-01-01 16:29",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 16:19",
+      "departure":"1970-01-01 16:19",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 00:11",
+      "departure":"1970-01-02 00:11",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 00:36",
+      "departure":"1970-01-02 00:36",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 01:01",
+      "departure":"1970-01-02 01:01",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 23:21",
+      "departure":"1970-01-01 23:21",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 23:46",
+      "departure":"1970-01-01 23:46",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:01",
+      "departure":"1970-01-01 22:01",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 22:56",
+      "departure":"1970-01-01 22:56",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-02 00:41",
+      "departure":"1970-01-02 00:41",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 21:14",
+      "departure":"1970-01-01 21:14",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 21:14",
+      "departure":"1970-01-01 21:14",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 21:34",
+      "departure":"1970-01-01 21:34",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 21:34",
+      "departure":"1970-01-01 21:34",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 22:11",
+      "departure":"1970-01-01 22:11",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 23:01",
+      "departure":"1970-01-01 23:01",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 22:11",
+      "departure":"1970-01-01 22:11",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 23:51",
+      "departure":"1970-01-01 23:51",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 23:01",
+      "departure":"1970-01-01 23:01",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 23:51",
+      "departure":"1970-01-01 23:51",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:06",
+      "departure":"1970-01-01 20:06",
+      "serviceId":"1_1",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-02 00:41",
+      "departure":"1970-01-02 00:41",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:33",
+      "departure":"1970-01-01 20:33",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:46",
+      "departure":"1970-01-01 20:46",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:33",
+      "departure":"1970-01-01 20:33",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:59",
+      "departure":"1970-01-01 20:59",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:59",
+      "departure":"1970-01-01 20:59",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:46",
+      "departure":"1970-01-01 20:46",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:12",
+      "departure":"1970-01-01 14:12",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:57",
+      "departure":"1970-01-01 13:57",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:57",
+      "departure":"1970-01-01 13:57",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:27",
+      "departure":"1970-01-01 14:27",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:12",
+      "departure":"1970-01-01 14:12",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:43",
+      "departure":"1970-01-01 14:43",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:43",
+      "departure":"1970-01-01 14:43",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:27",
+      "departure":"1970-01-01 14:27",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:00",
+      "departure":"1970-01-01 17:00",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:00",
+      "departure":"1970-01-01 17:00",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:12",
+      "departure":"1970-01-01 17:12",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:35",
+      "departure":"1970-01-01 16:35",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:47",
+      "departure":"1970-01-01 16:47",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:47",
+      "departure":"1970-01-01 16:47",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:25",
+      "departure":"1970-01-01 17:25",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:37",
+      "departure":"1970-01-01 17:37",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:37",
+      "departure":"1970-01-01 17:37",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:50",
+      "departure":"1970-01-01 17:50",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:12",
+      "departure":"1970-01-01 17:12",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:25",
+      "departure":"1970-01-01 17:25",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:45",
+      "departure":"1970-01-01 15:45",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:57",
+      "departure":"1970-01-01 15:57",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:45",
+      "departure":"1970-01-01 15:45",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:20",
+      "departure":"1970-01-01 15:20",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:20",
+      "departure":"1970-01-01 15:20",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:32",
+      "departure":"1970-01-01 15:32",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:32",
+      "departure":"1970-01-01 15:32",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:22",
+      "departure":"1970-01-01 16:22",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:10",
+      "departure":"1970-01-01 16:10",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:35",
+      "departure":"1970-01-01 16:35",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:22",
+      "departure":"1970-01-01 16:22",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:10",
+      "departure":"1970-01-01 16:10",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:57",
+      "departure":"1970-01-01 15:57",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:07",
+      "departure":"1970-01-01 15:07",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:07",
+      "departure":"1970-01-01 15:07",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:55",
+      "departure":"1970-01-01 14:55",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:55",
+      "departure":"1970-01-01 14:55",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:57",
+      "departure":"1970-01-01 19:57",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:57",
+      "departure":"1970-01-01 19:57",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:45",
+      "departure":"1970-01-01 19:45",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:09",
+      "departure":"1970-01-01 20:09",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:09",
+      "departure":"1970-01-01 20:09",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:20",
+      "departure":"1970-01-01 19:20",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:07",
+      "departure":"1970-01-01 19:07",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:45",
+      "departure":"1970-01-01 19:45",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:32",
+      "departure":"1970-01-01 19:32",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:32",
+      "departure":"1970-01-01 19:32",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:20",
+      "departure":"1970-01-01 19:20",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:41",
+      "departure":"1970-01-01 18:41",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:41",
+      "departure":"1970-01-01 18:41",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:28",
+      "departure":"1970-01-01 18:28",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:28",
+      "departure":"1970-01-01 18:28",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:54",
+      "departure":"1970-01-01 18:54",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:07",
+      "departure":"1970-01-01 19:07",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:54",
+      "departure":"1970-01-01 18:54",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:02",
+      "departure":"1970-01-01 18:02",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:50",
+      "departure":"1970-01-01 17:50",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:02",
+      "departure":"1970-01-01 18:02",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:15",
+      "departure":"1970-01-01 18:15",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:15",
+      "departure":"1970-01-01 18:15",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:21",
+      "departure":"1970-01-01 20:21",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:21",
+      "departure":"1970-01-01 20:21",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:21",
+      "departure":"1970-01-01 09:21",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:55",
+      "departure":"1970-01-01 08:55",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:55",
+      "departure":"1970-01-01 08:55",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:21",
+      "departure":"1970-01-01 09:21",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 06:46",
+      "departure":"1970-01-01 06:46",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:20",
+      "departure":"1970-01-01 08:20",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:20",
+      "departure":"1970-01-01 08:20",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:00",
+      "departure":"1970-01-01 10:00",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:00",
+      "departure":"1970-01-01 10:00",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 06:46",
+      "departure":"1970-01-01 06:46",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:26",
+      "departure":"1970-01-01 14:26",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:11",
+      "departure":"1970-01-01 14:11",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:56",
+      "departure":"1970-01-01 13:56",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:41",
+      "departure":"1970-01-01 13:41",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:41",
+      "departure":"1970-01-01 14:41",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:26",
+      "departure":"1970-01-01 20:26",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 22:11",
+      "departure":"1970-01-01 22:11",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 21:34",
+      "departure":"1970-01-01 21:34",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 21:14",
+      "departure":"1970-01-01 21:14",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:49",
+      "departure":"1970-01-01 20:49",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 23:51",
+      "departure":"1970-01-01 23:51",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 23:01",
+      "departure":"1970-01-01 23:01",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-02 00:41",
+      "departure":"1970-01-02 00:41",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:23",
+      "departure":"1970-01-01 08:23",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:05",
+      "departure":"1970-01-01 08:05",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:43",
+      "departure":"1970-01-01 08:43",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:25",
+      "departure":"1970-01-01 09:25",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:03",
+      "departure":"1970-01-01 09:03",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:45",
+      "departure":"1970-01-01 09:45",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_3",
+      "headsign":"9 | Cleunay"
+    },
+    {
+      "arrival":"1970-01-01 10:26",
+      "departure":"1970-01-01 10:26",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:05",
+      "departure":"1970-01-01 10:05",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:41",
+      "departure":"1970-01-01 10:41",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:56",
+      "departure":"1970-01-01 10:56",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:11",
+      "departure":"1970-01-01 11:11",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:26",
+      "departure":"1970-01-01 11:26",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:41",
+      "departure":"1970-01-01 11:41",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:56",
+      "departure":"1970-01-01 11:56",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:11",
+      "departure":"1970-01-01 12:11",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:26",
+      "departure":"1970-01-01 12:26",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:41",
+      "departure":"1970-01-01 12:41",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:56",
+      "departure":"1970-01-01 12:56",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:11",
+      "departure":"1970-01-01 13:11",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:26",
+      "departure":"1970-01-01 13:26",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:50",
+      "departure":"1970-01-01 19:50",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:34",
+      "departure":"1970-01-01 19:34",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:06",
+      "departure":"1970-01-01 20:06",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:42",
+      "departure":"1970-01-01 15:42",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:27",
+      "departure":"1970-01-01 15:27",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:57",
+      "departure":"1970-01-01 15:57",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:11",
+      "departure":"1970-01-01 15:11",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:56",
+      "departure":"1970-01-01 14:56",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:14",
+      "departure":"1970-01-01 17:14",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:30",
+      "departure":"1970-01-01 17:30",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:12",
+      "departure":"1970-01-01 16:12",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:28",
+      "departure":"1970-01-01 16:28",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:43",
+      "departure":"1970-01-01 16:43",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:58",
+      "departure":"1970-01-01 16:58",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:46",
+      "departure":"1970-01-01 18:46",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:02",
+      "departure":"1970-01-01 19:02",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:18",
+      "departure":"1970-01-01 19:18",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:45",
+      "departure":"1970-01-01 17:45",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:00",
+      "departure":"1970-01-01 18:00",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:16",
+      "departure":"1970-01-01 18:16",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:31",
+      "departure":"1970-01-01 18:31",
+      "serviceId":"1_3",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:12",
+      "departure":"1970-01-01 12:12",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:12",
+      "departure":"1970-01-01 12:12",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:57",
+      "departure":"1970-01-01 11:57",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:57",
+      "departure":"1970-01-01 11:57",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:42",
+      "departure":"1970-01-01 11:42",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:42",
+      "departure":"1970-01-01 11:42",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:26",
+      "departure":"1970-01-01 11:26",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:11",
+      "departure":"1970-01-01 11:11",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:26",
+      "departure":"1970-01-01 11:26",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:56",
+      "departure":"1970-01-01 10:56",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:11",
+      "departure":"1970-01-01 11:11",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:56",
+      "departure":"1970-01-01 10:56",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:42",
+      "departure":"1970-01-01 13:42",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:42",
+      "departure":"1970-01-01 13:42",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:27",
+      "departure":"1970-01-01 13:27",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:27",
+      "departure":"1970-01-01 13:27",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:12",
+      "departure":"1970-01-01 13:12",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:12",
+      "departure":"1970-01-01 13:12",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:57",
+      "departure":"1970-01-01 12:57",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:57",
+      "departure":"1970-01-01 12:57",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:42",
+      "departure":"1970-01-01 12:42",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:42",
+      "departure":"1970-01-01 12:42",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:27",
+      "departure":"1970-01-01 12:27",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:27",
+      "departure":"1970-01-01 12:27",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:31",
+      "departure":"1970-01-01 08:31",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:43",
+      "departure":"1970-01-01 08:43",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:43",
+      "departure":"1970-01-01 08:43",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:08",
+      "departure":"1970-01-01 09:08",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:05",
+      "departure":"1970-01-01 08:05",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:05",
+      "departure":"1970-01-01 08:05",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 08:31",
+      "departure":"1970-01-01 08:31",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:42",
+      "departure":"1970-01-01 10:42",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:28",
+      "departure":"1970-01-01 10:28",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:42",
+      "departure":"1970-01-01 10:42",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:14",
+      "departure":"1970-01-01 10:14",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:14",
+      "departure":"1970-01-01 10:14",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:28",
+      "departure":"1970-01-01 10:28",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:34",
+      "departure":"1970-01-01 09:34",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:47",
+      "departure":"1970-01-01 09:47",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:47",
+      "departure":"1970-01-01 09:47",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:34",
+      "departure":"1970-01-01 09:34",
+      "serviceId":"1_7",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:08",
+      "departure":"1970-01-01 09:08",
+      "serviceId":"1_8",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:01",
+      "departure":"1970-01-01 16:01",
+      "serviceId":"1_1",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 17:01",
+      "departure":"1970-01-01 17:01",
+      "serviceId":"1_1",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-02 00:41",
+      "departure":"1970-01-02 00:41",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 23:01",
+      "departure":"1970-01-01 23:01",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:11",
+      "departure":"1970-01-01 19:11",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:41",
+      "departure":"1970-01-01 18:41",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:51",
+      "departure":"1970-01-01 19:51",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 21:06",
+      "departure":"1970-01-01 21:06",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 20:26",
+      "departure":"1970-01-01 20:26",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 22:11",
+      "departure":"1970-01-01 22:11",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 21:36",
+      "departure":"1970-01-01 21:36",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:06",
+      "departure":"1970-01-01 15:06",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 15:41",
+      "departure":"1970-01-01 15:41",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:16",
+      "departure":"1970-01-01 16:16",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 16:51",
+      "departure":"1970-01-01 16:51",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 17:26",
+      "departure":"1970-01-01 17:26",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:06",
+      "departure":"1970-01-01 18:06",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 09:41",
+      "departure":"1970-01-01 09:41",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 10:26",
+      "departure":"1970-01-01 10:26",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 11:16",
+      "departure":"1970-01-01 11:16",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:06",
+      "departure":"1970-01-01 12:06",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 12:56",
+      "departure":"1970-01-01 12:56",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 13:46",
+      "departure":"1970-01-01 13:46",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 14:01",
+      "departure":"1970-01-01 14:01",
+      "serviceId":"1_1",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 15:01",
+      "departure":"1970-01-01 15:01",
+      "serviceId":"1_1",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 10:11",
+      "departure":"1970-01-01 10:11",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:21",
+      "departure":"1970-01-01 20:21",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:06",
+      "departure":"1970-01-01 13:06",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:31",
+      "departure":"1970-01-01 12:31",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:56",
+      "departure":"1970-01-01 11:56",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:21",
+      "departure":"1970-01-01 11:21",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:46",
+      "departure":"1970-01-01 10:46",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:36",
+      "departure":"1970-01-01 14:36",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 19:46",
+      "departure":"1970-01-01 19:46",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:31",
+      "departure":"1970-01-01 18:31",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:11",
+      "departure":"1970-01-01 19:11",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:16",
+      "departure":"1970-01-01 14:16",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:51",
+      "departure":"1970-01-01 14:51",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:41",
+      "departure":"1970-01-01 13:41",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:16",
+      "departure":"1970-01-01 17:16",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:56",
+      "departure":"1970-01-01 17:56",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:26",
+      "departure":"1970-01-01 15:26",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:01",
+      "departure":"1970-01-01 16:01",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:41",
+      "departure":"1970-01-01 16:41",
+      "serviceId":"1_1",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 23:51",
+      "departure":"1970-01-01 23:51",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_1",
+      "headsign":"1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival":"1970-01-01 18:06",
+      "departure":"1970-01-01 18:06",
+      "serviceId":"1_1",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 19:06",
+      "departure":"1970-01-01 19:06",
+      "serviceId":"1_1",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 14:23",
+      "departure":"1970-01-01 14:23",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:39",
+      "departure":"1970-01-01 14:39",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:09",
+      "departure":"1970-01-01 15:09",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:23",
+      "departure":"1970-01-01 15:23",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:54",
+      "departure":"1970-01-01 14:54",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:11",
+      "departure":"1970-01-01 21:11",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 14:08",
+      "departure":"1970-01-01 14:08",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:53",
+      "departure":"1970-01-01 13:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:38",
+      "departure":"1970-01-01 13:38",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:57",
+      "departure":"1970-01-01 19:57",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:12",
+      "departure":"1970-01-01 20:12",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:17",
+      "departure":"1970-01-01 18:17",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:29",
+      "departure":"1970-01-01 18:29",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:53",
+      "departure":"1970-01-01 18:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:41",
+      "departure":"1970-01-01 18:41",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:05",
+      "departure":"1970-01-01 19:05",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:17",
+      "departure":"1970-01-01 19:17",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:29",
+      "departure":"1970-01-01 19:29",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:42",
+      "departure":"1970-01-01 19:42",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:41",
+      "departure":"1970-01-01 16:41",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:53",
+      "departure":"1970-01-01 16:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:17",
+      "departure":"1970-01-01 17:17",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:05",
+      "departure":"1970-01-01 17:05",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:41",
+      "departure":"1970-01-01 17:41",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:29",
+      "departure":"1970-01-01 17:29",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 18:05",
+      "departure":"1970-01-01 18:05",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 17:53",
+      "departure":"1970-01-01 17:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:33",
+      "departure":"1970-01-01 15:33",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:43",
+      "departure":"1970-01-01 15:43",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:56",
+      "departure":"1970-01-01 20:56",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:05",
+      "departure":"1970-01-01 16:05",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 15:53",
+      "departure":"1970-01-01 15:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:29",
+      "departure":"1970-01-01 16:29",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 16:17",
+      "departure":"1970-01-01 16:17",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 07:26",
+      "departure":"1970-01-01 07:26",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:37",
+      "departure":"1970-01-01 08:37",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:39",
+      "departure":"1970-01-01 20:39",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:01",
+      "departure":"1970-01-01 08:01",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 23:46",
+      "departure":"1970-01-01 23:46",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:51",
+      "departure":"1970-01-01 21:51",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 00:21",
+      "departure":"1970-01-02 00:21",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 23:06",
+      "departure":"1970-01-01 23:06",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-02 01:01",
+      "departure":"1970-01-02 01:01",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:26",
+      "departure":"1970-01-01 08:26",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 12:38",
+      "departure":"1970-01-01 12:38",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:53",
+      "departure":"1970-01-01 12:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:08",
+      "departure":"1970-01-01 13:08",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 13:23",
+      "departure":"1970-01-01 13:23",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:53",
+      "departure":"1970-01-01 11:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:08",
+      "departure":"1970-01-01 12:08",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 12:23",
+      "departure":"1970-01-01 12:23",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:38",
+      "departure":"1970-01-01 10:38",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:53",
+      "departure":"1970-01-01 10:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:08",
+      "departure":"1970-01-01 11:08",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:23",
+      "departure":"1970-01-01 11:23",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 11:38",
+      "departure":"1970-01-01 11:38",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:38",
+      "departure":"1970-01-01 09:38",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:53",
+      "departure":"1970-01-01 09:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:08",
+      "departure":"1970-01-01 10:08",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 10:23",
+      "departure":"1970-01-01 10:23",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:08",
+      "departure":"1970-01-01 09:08",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 09:24",
+      "departure":"1970-01-01 09:24",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 20:24",
+      "departure":"1970-01-01 20:24",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:53",
+      "departure":"1970-01-01 08:53",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 08:21",
+      "departure":"1970-01-01 08:21",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 21:26",
+      "departure":"1970-01-01 21:26",
+      "serviceId":"1_3",
+      "headsign":"5 | Lycée Bréquigny"
+    },
+    {
+      "arrival":"1970-01-01 19:06",
+      "departure":"1970-01-01 19:06",
+      "serviceId":"1_3",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 16:01",
+      "departure":"1970-01-01 16:01",
+      "serviceId":"1_3",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 17:01",
+      "departure":"1970-01-01 17:01",
+      "serviceId":"1_3",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 18:06",
+      "departure":"1970-01-01 18:06",
+      "serviceId":"1_3",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 14:01",
+      "departure":"1970-01-01 14:01",
+      "serviceId":"1_3",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 15:01",
+      "departure":"1970-01-01 15:01",
+      "serviceId":"1_3",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 20:06",
+      "departure":"1970-01-01 20:06",
+      "serviceId":"1_3",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 13:16",
+      "departure":"1970-01-01 13:16",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 14:46",
+      "departure":"1970-01-01 14:46",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 15:46",
+      "departure":"1970-01-01 15:46",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 16:46",
+      "departure":"1970-01-01 16:46",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-02 01:36",
+      "departure":"1970-01-02 01:36",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 19:46",
+      "departure":"1970-01-01 19:46",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 18:46",
+      "departure":"1970-01-01 18:46",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 17:46",
+      "departure":"1970-01-01 17:46",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-02 00:01",
+      "departure":"1970-01-02 00:01",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 22:31",
+      "departure":"1970-01-01 22:31",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 21:46",
+      "departure":"1970-01-01 21:46",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 20:46",
+      "departure":"1970-01-01 20:46",
+      "serviceId":"1_2",
+      "headsign":"57 | Bruz Lavoisier"
+    },
+    {
+      "arrival":"1970-01-01 09:06",
+      "departure":"1970-01-01 09:06",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 09:46",
+      "departure":"1970-01-01 09:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 15:46",
+      "departure":"1970-01-01 15:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 16:16",
+      "departure":"1970-01-01 16:16",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 14:51",
+      "departure":"1970-01-01 14:51",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 15:16",
+      "departure":"1970-01-01 15:16",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 17:46",
+      "departure":"1970-01-01 17:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 18:16",
+      "departure":"1970-01-01 18:16",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 16:46",
+      "departure":"1970-01-01 16:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 17:16",
+      "departure":"1970-01-01 17:16",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 20:46",
+      "departure":"1970-01-01 20:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 20:16",
+      "departure":"1970-01-01 20:16",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 19:46",
+      "departure":"1970-01-01 19:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 19:16",
+      "departure":"1970-01-01 19:16",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 18:46",
+      "departure":"1970-01-01 18:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 11:06",
+      "departure":"1970-01-01 11:06",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 10:26",
+      "departure":"1970-01-01 10:26",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 21:46",
+      "departure":"1970-01-01 21:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 21:16",
+      "departure":"1970-01-01 21:16",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 13:46",
+      "departure":"1970-01-01 13:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 14:26",
+      "departure":"1970-01-01 14:26",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 13:06",
+      "departure":"1970-01-01 13:06",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 12:26",
+      "departure":"1970-01-01 12:26",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 11:46",
+      "departure":"1970-01-01 11:46",
+      "serviceId":"1_3",
+      "headsign":"57 | Bruz Centre"
+    },
+    {
+      "arrival":"1970-01-01 13:01",
+      "departure":"1970-01-01 13:01",
+      "serviceId":"1_7",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 13:01",
+      "departure":"1970-01-01 13:01",
+      "serviceId":"1_8",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 13:01",
+      "departure":"1970-01-01 13:01",
+      "serviceId":"1_2",
+      "headsign":"API | Etangs d\u0027Apigné"
+    },
+    {
+      "arrival":"1970-01-01 13:01",
+      "departure":"1970-01-01 13:01",
+      "serviceId":"1_3",
+      "headsign":"API | Etangs d\u0027Apigné"
+    }
+  ]
+}

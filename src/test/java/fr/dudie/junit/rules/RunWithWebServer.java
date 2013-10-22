@@ -47,7 +47,7 @@ public class RunWithWebServer extends ExternalResource {
     @Override
     protected void before() throws Throwable {
         server = new Server(0);
-        ResourceHandler handler = new ResourceHandler();
+        final ResourceHandler handler = new ResourceHandler();
         handler.setAliases(true);
         handler.setBaseResource(resource);
         server.setHandler(handler);

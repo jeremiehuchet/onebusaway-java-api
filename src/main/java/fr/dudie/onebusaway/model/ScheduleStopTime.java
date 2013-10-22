@@ -16,16 +16,21 @@ package fr.dudie.onebusaway.model;
 
 import java.util.Date;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 /**
  * @author orgoz
  */
 public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
 
     /** Arrival time. */
-    private Date arrivalTime;
+    @SerializedName("arrival")
+    private Time arrivalTime;
 
     /** Departure time. */
-    private Date departureTime;
+    @SerializedName("departure")
+    private Time departureTime;
 
     /** Service id. */
     private String serviceId;
@@ -33,7 +38,11 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
     /** Trip id. */
     private String tripId;
 
+    /** Route id. */
+    private String routeId;
+
     /** Route. */
+    @Expose(serialize = false)
     private Route route;
 
     private String headsign;
@@ -43,7 +52,7 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
      * 
      * @return the arrivalTime
      */
-    public Date getArrivalTime() {
+    public Time getArrivalTime() {
 
         return arrivalTime;
     }
@@ -54,7 +63,7 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
      * @param arrivalTime
      *            the arrivalTime to set
      */
-    public void setArrivalTime(final Date arrivalTime) {
+    public void setArrivalTime(final Time arrivalTime) {
 
         this.arrivalTime = arrivalTime;
     }
@@ -64,7 +73,7 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
      * 
      * @return the departureTime
      */
-    public Date getDepartureTime() {
+    public Time getDepartureTime() {
 
         return departureTime;
     }
@@ -75,7 +84,7 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
      * @param departureTime
      *            the departureTime to set
      */
-    public void setDepartureTime(final Date departureTime) {
+    public void setDepartureTime(final Time departureTime) {
 
         this.departureTime = departureTime;
     }
@@ -144,6 +153,25 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
     }
 
     /**
+     * Gets the route id.
+     * 
+     * @return the route id
+     */
+    public String getRouteId() {
+        return routeId;
+    }
+
+    /**
+     * Sets the route id.
+     * 
+     * @param routeId
+     *            the route id
+     */
+    public void setRouteId(String routeId) {
+        this.routeId = routeId;
+    }
+
+    /**
      * Gets the headsign.
      * 
      * @return the headsign
@@ -187,6 +215,7 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
 
     /*
      * (non-javadoc)
+     * 
      * @see java.lang.Object#toString()
      */
     @Override
