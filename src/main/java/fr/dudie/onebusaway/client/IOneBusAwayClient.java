@@ -17,6 +17,8 @@ package fr.dudie.onebusaway.client;
 import java.io.IOException;
 import java.util.Date;
 
+import fr.dudie.onebusaway.model.Agency;
+import fr.dudie.onebusaway.model.FeedInfo;
 import fr.dudie.onebusaway.model.StopSchedule;
 import fr.dudie.onebusaway.model.TripSchedule;
 
@@ -27,6 +29,23 @@ import fr.dudie.onebusaway.model.TripSchedule;
  * @author Jérémie Huchet
  */
 public interface IOneBusAwayClient {
+    
+    /**
+     * Get details about the feed.
+     * @return the feed details
+     * @throws IOException
+     *             an error occurred
+     */
+    FeedInfo getFeedInfo() throws IOException;
+    
+    /**
+     * Get details about the agency.
+     * @param agencyId the agency identifier
+     * @return the agency details
+     * @throws IOException
+     *             an error occurred
+     */
+    Agency getAgency(String agencyId) throws IOException;
 
     /**
      * Gets the trip details.

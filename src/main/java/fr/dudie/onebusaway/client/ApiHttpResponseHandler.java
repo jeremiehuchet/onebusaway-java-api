@@ -18,11 +18,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+import org.apache.http.HttpException;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.StatusLine;
 import org.apache.http.client.ResponseHandler;
-import org.mortbay.jetty.HttpException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -60,7 +60,7 @@ public class ApiHttpResponseHandler<T> implements ResponseHandler<T> {
 
         final StatusLine status = response.getStatusLine();
         if (status.getStatusCode() != HttpStatus.SC_OK) {
-            throw new HttpException(status.getStatusCode(), status.getReasonPhrase());
+            throw new IOException(new HttpException(String.format("%s - %s",status.getStatusCode(), status.getReasonPhrase())));
         }
 
         InputStream in = null;

@@ -1,5 +1,7 @@
 package fr.dudie.onebusaway.gson;
 
+import java.util.Locale;
+
 import com.google.gson.ExclusionStrategy;
 import com.google.gson.FieldAttributes;
 import com.google.gson.Gson;
@@ -24,6 +26,7 @@ public class OneBusAwayGsonFactory {
         gb.setDateFormat(DATE_FORMAT);
         gb.addSerializationExclusionStrategy(new ExcludeAnnotationStrategy());
         gb.registerTypeAdapter(Time.class, new TimeTypeAdapter());
+        gb.registerTypeAdapter(Locale.class, new LocaleTypeAdapter());
         if (prettyJson) {
             gb.setPrettyPrinting();
         }

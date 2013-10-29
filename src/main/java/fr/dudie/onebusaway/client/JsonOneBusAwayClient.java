@@ -26,6 +26,8 @@ import org.slf4j.LoggerFactory;
 import com.google.gson.Gson;
 
 import fr.dudie.onebusaway.gson.OneBusAwayGsonFactory;
+import fr.dudie.onebusaway.model.Agency;
+import fr.dudie.onebusaway.model.FeedInfo;
 import fr.dudie.onebusaway.model.StopSchedule;
 import fr.dudie.onebusaway.model.TripSchedule;
 
@@ -82,9 +84,21 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
         req.addHeader(H_ACCEPT, "text/json");
         req.addHeader(H_ACCEPT, "application/json");
 
-        LOGGER.debug("createOBARequest - {}", path);
+        LOGGER.info("GET: {}", path);
 
         return req;
+    }
+
+    @Override
+    public FeedInfo getFeedInfo() throws IOException {
+        final String urlCall = String.format("%s/info.json", baseUrl);
+        return httpClient.execute(createOBARequest(urlCall), new ApiHttpResponseHandler<FeedInfo>(FeedInfo.class, gson));
+    }
+
+    @Override
+    public Agency getAgency(final String agencyId) throws IOException {
+        final String urlCall = String.format("%s/agency/%s.json", baseUrl, agencyId);
+        return httpClient.execute(createOBARequest(urlCall), new ApiHttpResponseHandler<Agency>(Agency.class, gson));
     }
 
     /**
