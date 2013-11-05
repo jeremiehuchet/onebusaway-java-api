@@ -24,6 +24,8 @@ import java.util.List;
  * @author Jeremie Huchet
  */
 public class TripSchedule {
+    
+    private String headsign;
 
     /** List of stop times. */
     private final List<TripStopTime> stopTimes;
@@ -34,6 +36,25 @@ public class TripSchedule {
     public TripSchedule() {
 
         stopTimes = new ArrayList<TripStopTime>();
+    }
+
+    /**
+     * Gets the trip headsign.
+     * 
+     * @return the headsign
+     */
+    public String getHeadsign() {
+        return headsign;
+    }
+
+    /**
+     * Sets the trip headsign.
+     * 
+     * @param headsign
+     *            the headsign to set
+     */
+    public void setHeadsign(String headsign) {
+        this.headsign = headsign;
     }
 
     /**
@@ -65,15 +86,15 @@ public class TripSchedule {
         this.route = route;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
+    /* (non-Javadoc)
      * @see java.lang.Object#toString()
      */
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("TripSchedule [stopTimes=");
+        builder.append("TripSchedule [headsign=");
+        builder.append(headsign);
+        builder.append(", stopTimes=");
         builder.append(stopTimes);
         builder.append(", route=");
         builder.append(route);

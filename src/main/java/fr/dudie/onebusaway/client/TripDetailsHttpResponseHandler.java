@@ -80,6 +80,14 @@ public final class TripDetailsHttpResponseHandler implements ResponseHandler<Tri
                 final HashMap<String, Stop> stops = OneBusAwayUtils.getReferencedStops(
                         references.getJSONArray("stops"), routes);
 
+                final JSONArray trips = references.optJSONArray("trips");
+                final String tripId = entry.getString("tripId");
+                for (int i = 0; !trips.isNull(i); i++) {
+                    if (trips.getJSONObject(i).getString("id").equals(tripId)) {
+                        schedule.setHeadsign(trips.getJSONObject(i).getString("tripHeadsign"));
+                    }
+                }
+
                 for (int i = 0; !stopTimes.isNull(i); i++) {
                     schedule.getStopTimes().add(
                             convertJsonObjectToStopTime(stopTimes.optJSONObject(i), serviceDate,
@@ -120,7 +128,6 @@ public final class TripDetailsHttpResponseHandler implements ResponseHandler<Tri
         stopTime.setStop(stops.get(jsonObject.optString("stopId")));
         stopTime.setArrivalTime(new Time(jsonObject.optLong("arrivalTime") * 1000));
         stopTime.setDepartureTime(new Time(jsonObject.optLong("departureTime") * 1000));
-        stopTime.setStopHeadsign(jsonObject.optString("stopHeadsign"));
 
         return stopTime;
     }

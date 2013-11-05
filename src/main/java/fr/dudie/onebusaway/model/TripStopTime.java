@@ -35,9 +35,6 @@ public class TripStopTime {
     @SerializedName("departure")
     private Time departureTime;
 
-    /** Stop headsign. */
-    private String stopHeadsign;
-
     /**
      * Gets the stop.
      * 
@@ -101,27 +98,6 @@ public class TripStopTime {
         this.departureTime = departureTime;
     }
 
-    /**
-     * Gets the stopHeadsign.
-     * 
-     * @return the stopHeadsign
-     */
-    public String getStopHeadsign() {
-
-        return stopHeadsign;
-    }
-
-    /**
-     * Sets the stopHeadsign.
-     * 
-     * @param stopHeadsign
-     *            the stopHeadsign to set
-     */
-    public void setStopHeadsign(final String stopHeadsign) {
-
-        this.stopHeadsign = stopHeadsign;
-    }
-
     /*
      * (non-Javadoc)
      * 
@@ -136,8 +112,6 @@ public class TripStopTime {
         builder.append(arrivalTime);
         builder.append(", departureTime=");
         builder.append(departureTime);
-        builder.append(", stopHeadsign=");
-        builder.append(stopHeadsign);
         builder.append("]");
         return builder.toString();
     }
