@@ -97,6 +97,8 @@ public class JsonOneBusAwayClientTest {
                 .size());
         assertEquals("the first stop of this trip should be Henri Fréville", "Henri Fréville", schedule
                 .getStopTimes().get(0).getStop().getName());
+        assertEquals("the headsign should be 61 | Noyal-Châtillon Saint-Erblon", 
+                "61 | Noyal-Châtillon Saint-Erblon", schedule.getHeadsign());
 
         LOGGER.info("testGetTripDetails.end");
     }
@@ -180,13 +182,17 @@ public class JsonOneBusAwayClientTest {
         assertEquals("the stop name should be République Pré Botté", "République Pré Botté",
                 schedule.getStop().getName());
 
-        int cpt = 0;
+        int cpt = 0, hsCpt = 0;
         for (final ScheduleStopTime stopTime : schedule.getStopTimes()) {
             if (stopTime.getRoute().getShortName().equals("53")) {
                 cpt++;
             }
+            if ("53 | Rennes République".equals(stopTime.getHeadsign())) {
+                hsCpt++;
+            }
         }
         assertEquals("87 stop times should be returned by the api for line 53", 87, cpt);
+        assertEquals("45 stop times should be returned with headsign by the api for line 53", 45, hsCpt);
 
         LOGGER.info("testGetScheduleForStop.end");
     }
