@@ -60,6 +60,9 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
     /** The OneBusAway API url to use. */
     private final String baseUrl;
 
+    /** Listeners on executed requests. */
+    private final List<ClientListener> listeners = new ArrayList<ClientListener>();
+
     /**
      * Creates a OneBusAway API client.
      * 
@@ -74,6 +77,15 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
 
         this.httpClient = httpClient;
         this.baseUrl = String.format("%s%s?key=%s", url, OneBusAwayConstants.OBA_API_PATH, key);
+    }
+
+    /**
+     * Register a client listener.
+     * 
+     * @param l the listener
+     */
+    public void addListener(final ClientListener l) {
+        this.listeners.add(l);
     }
 
     /**
@@ -96,9 +108,14 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
             params.append("=").append(param.getValue());
         }
 
-        final HttpGet req = new HttpGet(path.concat(params.toString()));
+        final String url = path.concat(params.toString());
+        final HttpGet req = new HttpGet(url);
         req.addHeader(H_ACCEPT, "text/json");
         req.addHeader(H_ACCEPT, "application/json");
+
+        for (final ClientListener l : listeners) {
+            l.onRequest(url);
+        }
 
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("createOBARequest - {}", params.toString());
@@ -241,5 +258,9 @@ public class JsonOneBusAwayClient implements IOneBusAwayClient {
             LOGGER.debug("getStop.end");
         }
         return stop;
+    }
+
+    public static interface ClientListener {
+        void onRequest(final String url);
     }
 }
