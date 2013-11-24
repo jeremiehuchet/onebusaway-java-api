@@ -23,6 +23,7 @@ package fr.itinerennes.api.client.gson;
  */
 
 import java.util.Locale;
+import java.util.TimeZone;
 
 import com.google.gson.ExclusionStrategy;
 import com.google.gson.FieldAttributes;
@@ -49,6 +50,7 @@ public class ItineRennesApiGsonFactory {
         gb.addSerializationExclusionStrategy(new ExcludeAnnotationStrategy());
         gb.registerTypeAdapter(Time.class, new TimeTypeAdapter());
         gb.registerTypeAdapter(Locale.class, new LocaleTypeAdapter());
+        gb.registerTypeAdapter(TimeZone.class, new TimeZoneTypeAdapter());
         if (prettyJson) {
             gb.setPrettyPrinting();
         }
