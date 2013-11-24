@@ -21,6 +21,9 @@ package fr.dudie.onebusaway.exceptions;
  */
 public class OneBusAwayException extends Exception {
 
+    /** Serial version UID. */
+    private static final long serialVersionUID = -6552703516738273041L;
+
     /**
      * Creates a OneBusAway exception.
      * 
