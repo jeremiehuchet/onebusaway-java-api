@@ -33,6 +33,9 @@ import java.util.List;
  */
 public class TripSchedule {
 
+    /** The trip headsign. */
+    private String headsign;
+
     /** List of stop times. */
     private final List<TripStopTime> stopTimes;
 
@@ -42,6 +45,25 @@ public class TripSchedule {
     public TripSchedule() {
 
         stopTimes = new ArrayList<TripStopTime>();
+    }
+
+    /**
+     * Gets the trip headsign.
+     * 
+     * @return the trip headsign
+     */
+    public String getHeadsign() {
+        return headsign;
+    }
+
+    /**
+     * Sets the trip headsign.
+     * 
+     * @param headsign
+     *            the trip headsign to set
+     */
+    public void setHeadsign(String headsign) {
+        this.headsign = headsign;
     }
 
     /**
