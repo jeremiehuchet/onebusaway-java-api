@@ -63,7 +63,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses />.
         <!-- test deps versions -->
         <junit.version>4.8.2</junit.version>
         <commons-lang.version>2.6</commons-lang.version>
-        <commons-collections.version>3.2.1</commons-collections.version>
+        <commons-collections.version>3.2.2</commons-collections.version>
     </properties>
 
     <repositories>
